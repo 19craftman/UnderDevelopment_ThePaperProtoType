@@ -8,7 +8,7 @@ public class SleepyDog : MonoBehaviour
     private bool isAsleep;
     float marginX = .05f;
     int verticleRays = 4;
-
+    public GameObject winText;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +28,9 @@ public class SleepyDog : MonoBehaviour
             );
             isAsleep = true;
         }
-        else if(isAsleep)
+        else if(isAsleep && !winText.activeInHierarchy)
         {
-            //put dog to sleep
-            Debug.Log("zzz");
+            winText.SetActive(true);
         }
     }
 

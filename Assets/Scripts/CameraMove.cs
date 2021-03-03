@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private Vector3 locations = new Vector3(0,-10,-10);
+    private Vector3 locations = new Vector3(0,0,-10);
     private float moveby;
     private bool moving;
     private float moveTime = 2f;
