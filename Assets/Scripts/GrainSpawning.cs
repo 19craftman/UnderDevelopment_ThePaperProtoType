@@ -5,7 +5,7 @@ using UnityEngine;
 public class GrainSpawning : MonoBehaviour
 {
     public GameObject Grain;
-    public List<GameObject> numberOfGain = new List<GameObject>();
+    public static List<GameObject> numberOfGain = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {

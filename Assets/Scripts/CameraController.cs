@@ -13,8 +13,17 @@ public class CameraController : MonoBehaviour
     {
         hoverTime = 0f;
     }
+    Ray ray;
+    RaycastHit hit;
+    private void LateUpdate()
+    {
+        if (GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+        {
+            OnOverlap();
+        }
+    }
 
-    private void OnMouseOver()
+    private void OnOverlap()
     {
         hoverTime += Time.deltaTime;
 

@@ -31,6 +31,7 @@ public class SleepyDog : MonoBehaviour
         else if(isAsleep)
         {
             //put dog to sleep
+            Debug.Log("zzz");
         }
     }
 
