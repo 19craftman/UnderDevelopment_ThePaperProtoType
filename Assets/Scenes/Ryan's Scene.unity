@@ -204,7 +204,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1746518459199971254
+--- !u!1 &1741379747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1746518460268476724, guid: 3650802639562c44fb65bd86cdf2a19e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1755373608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741379748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741379747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068e7b4bcec649a46b0066b157f539fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Grain: {fileID: 7560662901668064649, guid: 869220b4640dff643ba02d1fafc33fa7, type: 3}
+  numberOfGain: []
+--- !u!1001 &1755373608
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -274,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 1746518460268476724, guid: 3650802639562c44fb65bd86cdf2a19e,
         type: 3}
       propertyPath: m_Name
-      value: Moveable
+      value: Moveable (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3650802639562c44fb65bd86cdf2a19e, type: 3}
