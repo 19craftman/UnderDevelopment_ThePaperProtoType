@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     {
         hoverTime += Time.deltaTime;
 
-        if(hoverTime >=.5f)
+        if(hoverTime >=.05f)
         {
             hoverTime = 0f;
             if (dir == Direction.left)
