@@ -5,14 +5,15 @@ using UnityEngine;
 public class MoveableObjects : MonoBehaviour
 {
     public Vector3 Offset;
-    public Vector3 mpos;    public Camera cam;    private void OnMouseDrag()    {        transform.position = mpos;    }
+    public Vector3 mpos;    private Camera cam;    
 
     // Start is called before the first frame update
     void Start()
     {
-        //Offset = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z + 10f);
+        cam = Camera.main;
+      
     }
-
+    private void OnMouseDrag()    {        transform.position = mpos;    }
     // Update is called once per frame
     void Update()
     {
