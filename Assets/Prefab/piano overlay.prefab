@@ -291,7 +291,6 @@ GameObject:
   - component: {fileID: 2794020686268874230}
   - component: {fileID: 2794020686268874227}
   - component: {fileID: 2794020686268874224}
-  - component: {fileID: 5232878615351918321}
   - component: {fileID: 2581307628722318210}
   m_Layer: 0
   m_Name: piano overlay
@@ -418,24 +417,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5232878615351918321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2794020686268874231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b02d5c2553eeee45981c7934dc29900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 2581307628722318210}
-  correctClip:
-  - {fileID: 8300000, guid: 0c6fc9c6b063d604a8cef23e6ee85e26, type: 3}
-  - {fileID: 8300000, guid: 4219eb2cebf92e04196d1cc60b0a18bf, type: 3}
-  - {fileID: 8300000, guid: da6af3faf2ca9d74c93ba78f27212fa3, type: 3}
-  play: 0
 --- !u!82 &2581307628722318210
 AudioSource:
   m_ObjectHideFlags: 0

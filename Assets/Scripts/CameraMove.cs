@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private Vector3 locations = new Vector3(0,0,-10);
+    public Vector3 locations = new Vector3(0,0,-10);
     private float moveby;
     private bool moving;
-    private float moveTime = 2f;
+    private float moveTime = .5f;
 
     void Start()
     {
@@ -19,7 +19,6 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void left()

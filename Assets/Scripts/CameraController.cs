@@ -23,11 +23,17 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        hoverTime = .1f;
+        OnOverlap();
+    }
+
     private void OnOverlap()
     {
         hoverTime += Time.deltaTime;
 
-        if(hoverTime >=.05f)
+        if(hoverTime >=.01f)
         {
             hoverTime = 0f;
             if (dir == Direction.left)

@@ -9,6 +9,11 @@ public class Piano : MonoBehaviour
     [SerializeField] private AudioClip[] correctClip;
     public static bool correct=false;
 
+    [SerializeField] private GameObject toActivate;
+
+    private bool playing;
+
+
     private void LateUpdate()
     {
         if(pianoKeys.Count>=3)
@@ -23,13 +28,17 @@ public class Piano : MonoBehaviour
         }
     }
 
-  
-
-
+    private void OnMouseDown()
+    {
+        if(!playing)
+        {
+            toActivate.SetActive(!toActivate.activeInHierarchy);
+        }
+    }
 
     IEnumerator playNotes(AudioClip[] ac)
     {
-        //disable clicking
+        playing = true;//disable clicking
         int i = 0;
         while(i<3)
         {
@@ -61,11 +70,12 @@ public class Piano : MonoBehaviour
         GrainSpawning.numberOfGain.Clear();
         if (correct)
         {
-            Destroy(gameObject);
+            Destroy(toActivate);
+            Destroy(this);
             //give cue that grain are gone.
         }
-        
-        //enable clicking
+
+        playing = false; //enable clicking
 
     }
 
