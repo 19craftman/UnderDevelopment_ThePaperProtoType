@@ -8,9 +8,16 @@ public class CameraMove : MonoBehaviour
     private float moveby;
     private bool moving;
     private float moveTime = .5f;
-
+    Sound coop;
+    Sound piano;
+    AudioManager am;
+    private float timer = 0;
     void Start()
     {
+        am = FindObjectOfType<AudioManager>();
+        coop = am.soundLookUp("ChickenCoop");
+        piano = am.soundLookUp("PianoRoom1");
+
         moveby = GetComponent<Camera>().orthographicSize*2f;
         transform.position = locations;
         moving = false;
@@ -19,6 +26,27 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!am.dPlaying && !coop.played && transform.position == new Vector3(0, -10, -10))
+        {
+            am.playDialog("ChickenCoop");
+        }
+        if(!am.dPlaying && !piano.played && transform.position == new Vector3(10, -10, -10))
+        {
+            am.playDialog("PianoRoom1");
+        }
+
+        if (timer >= 180 && transform.position == new Vector3(10, -10, -10)) 
+        {
+            am.playDialog("Hints1");
+            timer = 0;
+        }
+        else
+        {
+            timer += Time.deltaTime;
+        }
+
+        Debug.Log(timer);
+
     }
 
     public void left()

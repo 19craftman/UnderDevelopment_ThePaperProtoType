@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 503142992}
   - component: {fileID: 503142991}
   - component: {fileID: 503142994}
+  - component: {fileID: 503142995}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -775,6 +776,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locations: {x: 0, y: 0, z: -10}
+--- !u!114 &503142995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503142990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9921a39a4275b7d40a7602951a1ccf15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffects:
+  - name: clucking
+    clip: {fileID: 8300000, guid: 207cc3cc5d2dc6442925fb8eecd665e7, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    playOnce: 0
+    played: 0
+  - name: dog
+    clip: {fileID: 8300000, guid: c66ff5e01846a7042a66a070375989bc, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    playOnce: 0
+    played: 0
+  dialog:
+  - name: ChickenCoop
+    clip: {fileID: 8300000, guid: 12c4066f853d2234c8588982da789995, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 1
+    played: 0
+  - name: Hint2
+    clip: {fileID: 8300000, guid: 5085488330dafc84c9e6609eafe3c3ad, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 0
+    played: 0
+  - name: Hints1
+    clip: {fileID: 8300000, guid: 6d1a3061cb9b2af489d3370a0a10b644, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 0
+    played: 0
+  - name: PianoRoom1
+    clip: {fileID: 8300000, guid: 793306973dd8d27449b47837181a671e, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 1
+    played: 0
+  - name: TitleScreen1
+    clip: {fileID: 8300000, guid: 9a9f810a4d0cfa64c8f0a27fa656c0eb, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 1
+    played: 0
+  - name: EngGameTemp
+    clip: {fileID: 8300000, guid: a851d0862620d9f4ab8ff3ad3e8ba639, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    playOnce: 1
+    played: 0
+  mixer: {fileID: 24100000, guid: 6842ef1eb985e2b44a95bb2c35663b64, type: 2}
+  effectsGroup: {fileID: 5658505377188290686, guid: 6842ef1eb985e2b44a95bb2c35663b64,
+    type: 2}
+  fadeGroup: {fileID: -1914053873781256370, guid: 6842ef1eb985e2b44a95bb2c35663b64,
+    type: 2}
+  dialogGroup: {fileID: 1093299471112358042, guid: 6842ef1eb985e2b44a95bb2c35663b64,
+    type: 2}
+  dPlaying: 0
 --- !u!1 &528051626
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +937,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839550888
 GameObject:
@@ -1286,7 +1357,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1369979264
 GameObject:

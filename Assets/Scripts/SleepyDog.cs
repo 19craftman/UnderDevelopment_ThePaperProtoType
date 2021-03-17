@@ -9,10 +9,11 @@ public class SleepyDog : MonoBehaviour
     float marginX = .05f;
     int verticleRays = 4;
     public GameObject winText;
+    AudioManager am;
     // Start is called before the first frame update
     void Start()
     {
-        
+        am = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class SleepyDog : MonoBehaviour
         else if(isAsleep && !winText.activeInHierarchy)
         {
             winText.SetActive(true);
+            am.playDialog("EngGameTemp");
         }
     }
 

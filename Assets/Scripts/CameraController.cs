@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CameraController : MonoBehaviour
 {
@@ -8,16 +9,21 @@ public class CameraController : MonoBehaviour
     enum Direction {left, right, up, down };
     [SerializeField] private Direction dir;
     private float hoverTime;
+    AudioManager am;
+    Sound s;
     // Start is called before the first frame update
     void Start()
     {
+        am = FindObjectOfType<AudioManager>();
+        am.playDialog("TitleScreen1");
+        s = am.soundLookUp("TitleScreen1");
         hoverTime = 0f;
     }
-    Ray ray;
-    RaycastHit hit;
+
+
     private void LateUpdate()
     {
-        if (GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+        if (s.played && GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
         {
             OnOverlap();
         }
@@ -25,8 +31,11 @@ public class CameraController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        hoverTime = .1f;
-        OnOverlap();
+        if (s.played)
+        {
+            hoverTime = .1f;
+            OnOverlap();
+        }
     }
 
     private void OnOverlap()
