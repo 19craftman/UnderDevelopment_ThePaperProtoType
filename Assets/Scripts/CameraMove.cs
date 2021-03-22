@@ -5,7 +5,8 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public Vector3 locations = new Vector3(0,0,-10);
-    private float moveby;
+    private float moveY;
+    private float moveX;
     private bool moving;
     private float moveTime = .5f;
     Sound coop;
@@ -18,7 +19,8 @@ public class CameraMove : MonoBehaviour
         coop = am.soundLookUp("ChickenCoop");
         piano = am.soundLookUp("PianoRoom1");
 
-        moveby = GetComponent<Camera>().orthographicSize*2f;
+        moveY = GetComponent<Camera>().orthographicSize*2f;
+        moveX = moveY * 1.8f;
         transform.position = locations;
         moving = false;
     }
@@ -30,7 +32,7 @@ public class CameraMove : MonoBehaviour
         {
             am.playDialog("ChickenCoop");
         }
-        if(!am.dPlaying && !piano.played && transform.position == new Vector3(10, -10, -10))
+        if(!am.dPlaying && !piano.played && transform.position == new Vector3(18, -10, -10))
         {
             am.playDialog("PianoRoom1");
         }
@@ -45,7 +47,7 @@ public class CameraMove : MonoBehaviour
             timer += Time.deltaTime;
         }
 
-        Debug.Log(timer);
+        //Debug.Log(timer);
 
     }
 
@@ -53,7 +55,7 @@ public class CameraMove : MonoBehaviour
     {
         if(locations.x !=0 && !moving)
         {
-            locations.x -= moveby;
+            locations.x -= moveX;
             StartCoroutine(move());
         }
     }
@@ -62,7 +64,7 @@ public class CameraMove : MonoBehaviour
     {
         if (locations.x == 0 && !moving)
         {
-            locations.x += moveby;
+            locations.x += moveX;
             StartCoroutine(move());
         }
     }
@@ -71,7 +73,7 @@ public class CameraMove : MonoBehaviour
     {
         if (locations.y!=0 && !moving)
         {
-            locations.y += moveby;
+            locations.y += moveY;
             StartCoroutine(move());
         }
     }
@@ -80,7 +82,7 @@ public class CameraMove : MonoBehaviour
     {
         if (locations.y!=-20 && !moving)
         {
-            locations.y -= moveby;
+            locations.y -= moveY;
             StartCoroutine( move());
         }
     }
@@ -98,6 +100,7 @@ public class CameraMove : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        transform.position = locations;
         moving = false;
     }
 
