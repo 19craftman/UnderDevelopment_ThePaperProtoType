@@ -9,6 +9,8 @@ public class ChangeDayNight : MonoBehaviour
     public GameObject[] dayRooms;
     public GameObject[] nightRooms;
 
+    public Sprite dayS, night;
+
     private void Awake()
     {
         cogInPlace = false;
@@ -22,11 +24,14 @@ public class ChangeDayNight : MonoBehaviour
             if(day)
             {
                 swap(nightRooms, dayRooms);
+                GetComponent<SpriteRenderer>().sprite = night;
             }
             else
             {
                 swap(dayRooms, nightRooms);
+                GetComponent<SpriteRenderer>().sprite = dayS;
             }
+            day = !day;
         }
     }
 

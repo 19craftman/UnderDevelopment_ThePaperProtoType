@@ -72,6 +72,9 @@ public class DogMove : MonoBehaviour
         yield return StartCoroutine(moveDog(startPos, endPos));
         //play eat animation
         yield return new WaitForSeconds(eatTime);
+
+        GetComponent<SpriteRenderer>().sprite = empty;
+
         //stop eat animation
         spDog.flipX = true;
         yield return StartCoroutine(moveDog(endPos, startPos));

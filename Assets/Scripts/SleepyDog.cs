@@ -27,7 +27,7 @@ public class SleepyDog : MonoBehaviour
                 GetComponent<BoxCollider2D>().bounds.size.x,
                 GetComponent<BoxCollider2D>().bounds.size.y
             );
-            isAsleep = true;
+            isAsleep = abovePiano();
         }
         else if(isAsleep && !winText.activeInHierarchy)
         {
