@@ -5,25 +5,23 @@ using System;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private CameraMove cameraMove;
+    private GameObject cam;
+    private CameraMove cameraMove;
     enum Direction {left, right, up, down };
     [SerializeField] private Direction dir;
     private float hoverTime;
-    AudioManager am;
-    Sound s;
     // Start is called before the first frame update
     void Start()
     {
-        am = FindObjectOfType<AudioManager>();
-        am.playDialog("TitleScreen1");
-        s = am.soundLookUp("TitleScreen1");
+        cam = Camera.main.gameObject;
+        cameraMove = cam.GetComponent<CameraMove>();
         hoverTime = 0f;
     }
 
 
     private void LateUpdate()
     {
-        if (s.played && GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+        if (GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
         {
             OnOverlap();
         }
@@ -31,11 +29,8 @@ public class CameraController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (s.played)
-        {
-            hoverTime = .1f;
-            OnOverlap();
-        }
+        hoverTime = .1f;
+        OnOverlap();
     }
 
     private void OnOverlap()
@@ -47,19 +42,19 @@ public class CameraController : MonoBehaviour
             hoverTime = 0f;
             if (dir == Direction.left)
             {
-                cameraMove.left();
+                cameraMove.Left();
             }
             else if (dir == Direction.right)
             {
-                cameraMove.right();
+                cameraMove.Right();
             }
             else if (dir == Direction.up)
             {
-                cameraMove.up();
+                cameraMove.Up();
             }
             else if (dir == Direction.down)
             {
-                cameraMove.down();
+                cameraMove.Down();
             }
         }
     }

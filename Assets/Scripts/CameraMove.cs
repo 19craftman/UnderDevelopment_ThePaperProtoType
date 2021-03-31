@@ -9,26 +9,41 @@ public class CameraMove : MonoBehaviour
     private float moveX;
     private bool moving;
     private float moveTime = .5f;
-    Sound coop;
-    Sound piano;
-    AudioManager am;
+
+    private Sound coop;
+    private Sound piano;
+    private Sound doors;
+    private AudioManager am;
     private float timer = 0;
+
+    public Arrow left, right, up, down;
+    private Arrow[] arrows;
+
     void Start()
     {
+        arrows = new Arrow[]{left, right, up, down};
+
         am = FindObjectOfType<AudioManager>();
         coop = am.soundLookUp("ChickenCoop");
         piano = am.soundLookUp("PianoRoom1");
+
+        StartCoroutine(PlayAudioIntro());
 
         moveY = GetComponent<Camera>().orthographicSize*2f;
         moveX = moveY * 1.8f;
         transform.position = locations;
         moving = false;
+
+        foreach (Arrow a in arrows)
+        {
+            a.Disable();
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if (!am.dPlaying && !coop.played && transform.position == new Vector3(0, -10, -10))
+        if (!am.dPlaying && !coop.played && transform.position == new Vector3(0, -20, -10))
         {
             am.playDialog("ChickenCoop");
         }
@@ -37,7 +52,7 @@ public class CameraMove : MonoBehaviour
             am.playDialog("PianoRoom1");
         }
 
-        if (timer >= 180 && transform.position == new Vector3(10, -10, -10)) 
+        if (timer >= 180 && transform.position == new Vector3(18, -10, -10)) 
         {
             am.playDialog("Hints1");
             timer = 0;
@@ -46,49 +61,61 @@ public class CameraMove : MonoBehaviour
         {
             timer += Time.deltaTime;
         }
-
         //Debug.Log(timer);
 
     }
 
-    public void left()
+    public void Left()
     {
-        if(locations.x !=0 && !moving)
+        if(GameState.doorsSetUp)
         {
-            locations.x -= moveX;
-            StartCoroutine(move());
+            if (locations.x != 0 && !moving)
+            {
+                locations.x -= moveX;
+                StartCoroutine(Move());
+            }
+        }
+        
+    }
+
+    public void Right()
+    {
+        if (GameState.titleScreenComplete)
+        {
+            if (locations.x == 0 && !moving)
+            {
+                locations.x += moveX;
+                StartCoroutine(Move());
+            }
         }
     }
 
-    public void right()
+    public void Up()
     {
-        if (locations.x == 0 && !moving)
+        if (GameState.doorsSetUp)
         {
-            locations.x += moveX;
-            StartCoroutine(move());
+            if (locations.y != 0 && !moving)
+            {
+                locations.y += moveY;
+                StartCoroutine(Move());
+            }
         }
     }
 
-    public void up()
+    public void Down()
     {
-        if (locations.y!=0 && !moving)
+        if (GameState.doorsSetUp)
         {
-            locations.y += moveY;
-            StartCoroutine(move());
-        }
-    }
-
-    public void down()
-    {
-        if (locations.y!=-20 && !moving)
-        {
-            locations.y -= moveY;
-            StartCoroutine( move());
+            if (locations.y != -20 && !moving)
+            {
+                locations.y -= moveY;
+                StartCoroutine(Move());
+            }
         }
     }
 
 
-    IEnumerator move()
+    IEnumerator Move()
     {
         moving = true;
         //Vector3 startPos = transform.position;
@@ -101,7 +128,41 @@ public class CameraMove : MonoBehaviour
             yield return null;
         }
         transform.position = locations;
+
+        if (GameState.doorsSetUp == true) 
+        {
+            foreach(Arrow a in arrows)
+            {
+                a.ChangeColor(locations);
+            }
+        }
+        else
+        {
+            right.ChangeColor(locations);
+        }
+
         moving = false;
+    }
+
+    IEnumerator PlayAudioIntro()
+    {
+        am.playDialog("TitleScreen1");
+        Sound s = am.soundLookUp("TitleScreen1");
+        while(s.played == false)
+        {
+            yield return null;
+        }
+        GameState.titleScreenComplete = true;
+        right.Enable();
+        while(GameState.doorsSetUp == false)
+        {
+            yield return null;
+        }
+
+        foreach(Arrow a in arrows)
+        {
+            a.ChangeColor(locations);
+        }
     }
 
 }

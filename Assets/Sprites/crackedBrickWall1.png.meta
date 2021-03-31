@@ -1,0 +1,752 @@
+fileFormatVersion: 2
+guid: b714e6d27ecd9954b9f687a5be2b2e70
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -965727663751403238
+    second: crackedBrickWall1_0
+  - first:
+      213: -6729257904341987121
+    second: crackedBrickWall1_1
+  - first:
+      213: 4347125194749018322
+    second: crackedBrickWall1_2
+  - first:
+      213: -3088040988480921693
+    second: crackedBrickWall1_3
+  - first:
+      213: -4916741425055072783
+    second: crackedBrickWall1_4
+  - first:
+      213: 7001548660456071043
+    second: crackedBrickWall1_5
+  - first:
+      213: 3072962354626197327
+    second: crackedBrickWall1_6
+  - first:
+      213: -8930797455051265395
+    second: crackedBrickWall1_7
+  - first:
+      213: -1652521416625549708
+    second: crackedBrickWall1_8
+  - first:
+      213: 4725229409992674549
+    second: crackedBrickWall1_9
+  - first:
+      213: 5910015912136205416
+    second: crackedBrickWall1_10
+  - first:
+      213: 8695251339803467570
+    second: crackedBrickWall1_11
+  - first:
+      213: -4668608304676058862
+    second: crackedBrickWall1_12
+  - first:
+      213: -4405096862148957724
+    second: crackedBrickWall1_13
+  - first:
+      213: -8281301608962634187
+    second: crackedBrickWall1_14
+  - first:
+      213: 6686435677181624071
+    second: crackedBrickWall1_15
+  - first:
+      213: -7311678128290139603
+    second: crackedBrickWall1_16
+  - first:
+      213: -3519417816878176276
+    second: crackedBrickWall1_17
+  - first:
+      213: 7507774722921688114
+    second: crackedBrickWall1_18
+  - first:
+      213: -5490087224772799613
+    second: crackedBrickWall1_19
+  - first:
+      213: -5076019012823904069
+    second: crackedBrickWall1_20
+  - first:
+      213: -1245244785518320235
+    second: crackedBrickWall1_21
+  - first:
+      213: -4605458667841818294
+    second: crackedBrickWall1_22
+  - first:
+      213: -5721306775526231397
+    second: crackedBrickWall1_23
+  - first:
+      213: -7599103957432449192
+    second: crackedBrickWall1_24
+  - first:
+      213: -3747595568558834588
+    second: crackedBrickWall1_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crackedBrickWall1_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1721
+        width: 182
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1964547ecb0992f0800000000000000
+      internalID: -965727663751403238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1586
+        width: 111
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0d4b1d69fdc92a0800000000000000
+      internalID: -6729257904341987121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1578
+        width: 285
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d08a232557145c30800000000000000
+      internalID: 4347125194749018322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1425
+        width: 137
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af9fb505131525d0800000000000000
+      internalID: -3088040988480921693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1200
+        width: 274
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdf42359b934cbb0800000000000000
+      internalID: -4916741425055072783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_5
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 1515
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f9810396f7a2160800000000000000
+      internalID: 7001548660456071043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_6
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1340
+        width: 314
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4774a3fafa55aa20800000000000000
+      internalID: 3072962354626197327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_7
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1275
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ae4b2380f6f0480800000000000000
+      internalID: -8930797455051265395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_8
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 977
+        width: 270
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e0f4ae6801119e0800000000000000
+      internalID: -1652521416625549708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_9
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1100
+        width: 218
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc87d0fc13639140800000000000000
+      internalID: 4725229409992674549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_10
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 748
+        width: 486
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864e8c3d828940250800000000000000
+      internalID: 5910015912136205416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_11
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 853
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f99bd260dbba870800000000000000
+      internalID: 8695251339803467570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_12
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 859
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21948547b75c53fb0800000000000000
+      internalID: -4668608304676058862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 857
+        width: 13
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e96c6a3eb3fdd2c0800000000000000
+      internalID: -4405096862148957724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 857
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e49e71018e21d80800000000000000
+      internalID: -8281301608962634187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_15
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 859
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fb8e772ddfacc50800000000000000
+      internalID: 6686435677181624071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_16
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 855
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f5433b73b78a90800000000000000
+      internalID: -7311678128290139603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_17
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 836
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7abc86424882fc0800000000000000
+      internalID: -3519417816878176276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_18
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 812
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c67652559f03860800000000000000
+      internalID: 7507774722921688114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_19
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 814
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383d18db1ca4fc3b0800000000000000
+      internalID: -5490087224772799613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_20
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 810
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0908b0a9b5e89b0800000000000000
+      internalID: -5076019012823904069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 765
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595e5c4177008bee0800000000000000
+      internalID: -1245244785518320235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_22
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 767
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a417b8b0ebf1610c0800000000000000
+      internalID: -4605458667841818294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_23
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 771
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9239b9ecc5d990b0800000000000000
+      internalID: -5721306775526231397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_24
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 765
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85749f5663f8a8690800000000000000
+      internalID: -7599103957432449192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crackedBrickWall1_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 366
+        width: 326
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cf83e9fadddfbc0800000000000000
+      internalID: -3747595568558834588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

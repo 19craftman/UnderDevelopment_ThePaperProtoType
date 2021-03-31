@@ -2,24 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaceSun : MonoBehaviour
+public class BrickWall : MonoBehaviour
 {
-    bool colliding;
-    bool dragging;
-    [SerializeField] private GameObject goal;
+    [SerializeField] private GameObject wall;
+    //[SerializeField] private Sprite broken;
+    private bool colliding;
+    private bool dragging;
     // Start is called before the first frame update
     private void Awake()
     {
         colliding = false;
         dragging = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDrag()
     {
         dragging = true;
@@ -27,30 +21,28 @@ public class PlaceSun : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.Equals(goal))
+        if (collision.gameObject.Equals(wall))
         {
             colliding = true;
         }
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(colliding && collision.gameObject.Equals(goal))
+        if (colliding && collision.gameObject.Equals(wall))
         {
             colliding = false;
         }
     }
     private void OnMouseUp()
     {
-        if(colliding && dragging)
+        if (colliding && dragging)
         {
-            SpriteRenderer sp = goal.GetComponent<SpriteRenderer>();
-            sp.color = new Color(0, 0, 0, 1);
-            GameState.sunPlaced = true;
-            Destroy(gameObject);
-        } 
-        else if(dragging)
+            //wall.GetComponent<SpriteRenderer>().sprite = broken;
+            Destroy(wall);
+        }
+        else if (dragging)
         {
             dragging = false;
         }

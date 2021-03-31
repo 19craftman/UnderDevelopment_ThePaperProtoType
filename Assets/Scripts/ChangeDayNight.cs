@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ChangeDayNight : MonoBehaviour
 {
-    public static bool cogInPlace;
-    public static bool day;
     public GameObject[] dayRooms;
     public GameObject[] nightRooms;
 
@@ -13,15 +11,13 @@ public class ChangeDayNight : MonoBehaviour
 
     private void Awake()
     {
-        cogInPlace = false;
-        day = false;
     }
 
     private void OnMouseDown()
     {
-        if(cogInPlace)
+        if(GameState.sunPlaced)
         {
-            if(day)
+            if(GameState.dayTime)
             {
                 swap(nightRooms, dayRooms);
                 GetComponent<SpriteRenderer>().sprite = night;
@@ -31,7 +27,7 @@ public class ChangeDayNight : MonoBehaviour
                 swap(dayRooms, nightRooms);
                 GetComponent<SpriteRenderer>().sprite = dayS;
             }
-            day = !day;
+            GameState.dayTime = !GameState.dayTime;
         }
     }
 

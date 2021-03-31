@@ -29,7 +29,6 @@ public class DogMove : MonoBehaviour
         spBowl = GetComponent<SpriteRenderer>();
         startPos = dog.transform.position;
         endPos = (Vector2)transform.position + offset;
-        StartCoroutine(goEat());
     }
 
     private void Update()
