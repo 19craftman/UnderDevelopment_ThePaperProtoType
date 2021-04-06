@@ -32,7 +32,16 @@ public class SleepyDog : MonoBehaviour
         else if(isAsleep && !winText.activeInHierarchy)
         {
             winText.SetActive(true);
+            GameState.puzzleOneSolved = true;
             am.playDialog("EngGameTemp");
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if(GameState.puzzleOneSolved == false)
+        {
+            am.playDialog("Dog1");
         }
     }
 

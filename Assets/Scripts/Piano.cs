@@ -9,16 +9,25 @@ public class Piano : MonoBehaviour
     [SerializeField] private AudioClip[] correctClip;
     public static bool correct=false;
 
+    private AudioManager am;
+    private string[] cluckSounds = new string[] { "Cluck2", "Cluck3", "Cluck4" };
+    private int index;
+
     [SerializeField] private GameObject toActivate;
 
     private bool playing;
 
-
+    private void Start()
+    {
+        am = FindObjectOfType<AudioManager>();
+        index = 0;
+    }
+    public AudioClip[] ac;
     private void LateUpdate()
     {
         if(pianoKeys.Count>=3)
         {
-            AudioClip[] ac = pianoKeys.ToArray();
+            ac = pianoKeys.ToArray();
             pianoKeys.Clear();
             if(!correct)
             {
@@ -30,9 +39,17 @@ public class Piano : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!playing)
+        if(GameState.chickenFed)
         {
-            toActivate.SetActive(!toActivate.activeInHierarchy);
+            if(!playing)
+            {
+                toActivate.SetActive(!toActivate.activeInHierarchy);
+            }
+        }
+        else
+        {
+            am.playDialog(cluckSounds[index]);
+            index = (index + 1) % 3;
         }
     }
 
@@ -62,17 +79,10 @@ public class Piano : MonoBehaviour
         }
         correct = temp;
         source.Stop();
-        GameObject[] grain = GameObject.FindGameObjectsWithTag("Grain");
-        for(int index=0; index<grain.Length; index++)
-        {
-            Destroy(grain[index]);
-        }
-        GrainSpawning.numberOfGain.Clear();
         if (correct)
         {
             Destroy(toActivate);
             Destroy(this);
-            //give cue that grain are gone.
         }
 
         playing = false; //enable clicking

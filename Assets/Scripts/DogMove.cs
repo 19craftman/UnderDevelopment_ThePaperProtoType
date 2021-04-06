@@ -39,9 +39,10 @@ public class DogMove : MonoBehaviour
             {
                 SpriteRenderer sp = GetComponent<SpriteRenderer>();
                 sp.sprite = full;
-                if (dogFood != null)
+                if (dogFood != null && GameState.puzzleOneSolved == false)
                 {
-                    Destroy(dogFood);
+                    dogFood.transform.position = new Vector3(.048f, -12.31f, 0f);
+                    dogFood = null;
                     colliding = false;
                     StartCoroutine(goEat());
                 }
@@ -75,9 +76,12 @@ public class DogMove : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = empty;
 
         //stop eat animation
-        spDog.flipX = true;
-        yield return StartCoroutine(moveDog(endPos, startPos));
-        spDog.flipX = false;
+        if(GameState.puzzleOneSolved == false)
+        {
+            spDog.flipX = true;
+            yield return StartCoroutine(moveDog(endPos, startPos));
+            spDog.flipX = false;
+        }
         eating = false;
     }
     IEnumerator moveDog(Vector2 s, Vector2 e)

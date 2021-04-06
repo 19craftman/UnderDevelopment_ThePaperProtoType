@@ -8,6 +8,7 @@ TagManager:
   - Grain
   - Piano
   - DogFood
+  - Inventory
   layers:
   - Default
   - TransparentFX
