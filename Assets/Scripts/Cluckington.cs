@@ -12,7 +12,7 @@ public class Cluckington: MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(am.dPlaying == false&& GameState.chickenFed==false)
+        if(am.dPlaying == false&& GameState.cluckingtonFed==false)
         {
             am.playDialog("Cluck1");
         }

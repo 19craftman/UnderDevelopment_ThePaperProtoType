@@ -10,7 +10,7 @@ public class PianoKey : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log(clip.name);
-        if (GameState.chickenFed && Piano.pianoKeys.Count < 3 && !Piano.correct)
+        if (GameState.cluckingtonFed && Piano.pianoKeys.Count < 3 && !Piano.correct)
         {
             Piano.pianoKeys.Add(clip);
         }

@@ -39,7 +39,7 @@ public class Piano : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(GameState.chickenFed)
+        if(GameState.cluckingtonFed)
         {
             if(!playing)
             {

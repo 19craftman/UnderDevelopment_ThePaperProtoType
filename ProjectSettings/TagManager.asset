@@ -9,6 +9,8 @@ TagManager:
   - Piano
   - DogFood
   - Inventory
+  - Chicken
+  - Bucket
   layers:
   - Default
   - TransparentFX

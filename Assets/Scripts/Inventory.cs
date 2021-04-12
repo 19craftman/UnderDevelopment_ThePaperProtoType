@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    //this script controls items that can be added to inventory. it takes note of if they are being dragged, if they are colliding with inventory
+    //and utilizes insideInventory script to add items to the invetory if the conditions are met when the mouse is released.
+    //conditions: object is being dragged and object is colliding with the inventory object
+
     private GameObject inventory;
+    private InsideInventory insideInventory;
     private bool colliding;
     private bool dragging;
+    public bool inInven;
     // Start is called before the first frame update
     private void Awake()
     {
+        inInven = false;
         colliding = false;
         dragging = false;
+        insideInventory = FindObjectOfType<InsideInventory>();
+        inventory = insideInventory.gameObject;
     }
     private void OnMouseDrag()
     {
-        if(transform.parent!=null)
-        {
-            if (transform.parent.gameObject.CompareTag("Inventory"))
-            {
-                transform.parent.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-            }
-
-            transform.parent = null;
-        }
         dragging = true;
+        if (inInven)
+        {
+            insideInventory.removeObject(gameObject);
+            inInven = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Inventory"));
+        if (collision.gameObject.Equals(inventory))
         {
-            inventory = collision.gameObject;
             colliding = true;
         }
 
@@ -42,16 +46,18 @@ public class Inventory : MonoBehaviour
         if (colliding && collision.gameObject.Equals(inventory))
         {
             colliding = false;
-            inventory = null;
         }
     }
     private void OnMouseUp()
     {
         if (colliding && dragging)
         {
-            transform.parent = inventory.transform;
-            transform.localPosition = Vector3.zero;
-            inventory.GetComponent<BoxCollider2D>().enabled = false;
+            dragging = false;
+            inInven = insideInventory.addObject(gameObject);
+            if(!inInven)
+            {
+                //play inventory full clip
+            }
         }
         else if (dragging)
         {
