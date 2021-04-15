@@ -19,13 +19,13 @@ public class CameraController : MonoBehaviour
     }
 
 
-    private void LateUpdate()
-    {
-        if (GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
-        {
-            OnOverlap();
-        }
-    }
+    //private void LateUpdate()
+    //{
+    //    if (GetComponent<Collider2D>().OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+    //    {
+    //        OnOverlap();
+    //    }
+    //}
 
     private void OnMouseDown()
     {
@@ -35,10 +35,10 @@ public class CameraController : MonoBehaviour
 
     private void OnOverlap()
     {
-        hoverTime += Time.deltaTime;
+        //hoverTime += Time.deltaTime;
 
-        if(hoverTime >=.01f)
-        {
+        //if(hoverTime >=.01f)
+        //{
             hoverTime = 0f;
             if (dir == Direction.left)
             {
@@ -56,7 +56,7 @@ public class CameraController : MonoBehaviour
             {
                 cameraMove.Down();
             }
-        }
+        //}
     }
 
     private void OnMouseExit()

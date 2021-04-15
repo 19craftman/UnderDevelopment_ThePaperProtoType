@@ -41,7 +41,13 @@ public class SleepyDog : MonoBehaviour
     {
         if(GameState.puzzleOneSolved == false)
         {
-            am.playDialog("Dog1");
+            if(GameState.dogEating == false)
+            {
+                am.playDialog("Dog1");
+            } else
+            {
+                am.playDialog("Dog2");
+            }
         }
     }
 

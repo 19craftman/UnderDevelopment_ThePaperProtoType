@@ -171,60 +171,61 @@ public class AudioManager : MonoBehaviour
     {
         if (!play.playOnce || !play.played)
         {
+            play.played = true;
             dPlaying = true;
 
-            if (!interrupt)
-            {
-                EffectsCurrPlaying();//moves any sound effect currently playing to the fade group to prep for fading.
-                StartCoroutine(StartFade("Fade", .025f, .1f));//fades down sound effects
-            }
-            if (dSource.isPlaying)
-            {
-                float dialogVol;
-                mixer.GetFloat("Dialog", out dialogVol);
-                StartCoroutine(StartFade("Dialog", .025f, 0f));
-                yield return new WaitForSeconds(.025f + 0.001f);//extra padding on the fade duration, i don't use a while loop here because two things are effecting fading at once
-                dSource.Stop();
-                mixer.SetFloat("Dialog", dialogVol);
-            }
-            while (fading)//in case the sound effect fade call is still going(this will probably only occur if the above if statement doesn't trigger)
-            {
-                yield return null;
-            }
+            //if (!interrupt)
+            //{
+            //    EffectsCurrPlaying();//moves any sound effect currently playing to the fade group to prep for fading.
+            //    StartCoroutine(StartFade("Fade", .025f, .1f));//fades down sound effects
+            //}
+            //if (dSource.isPlaying)
+            //{
+            //    dSource.Stop();
+            //    //float dialogVol;
+            //    //mixer.GetFloat("Dialog", out dialogVol);
+            //    //StartCoroutine(StartFade("Dialog", .025f, 0f));
+            //    //yield return new WaitForSeconds(.025f);//extra padding on the fade duration, i don't use a while loop here because two things are effecting fading at once
+            //    //dSource.Stop();
+            //    //mixer.SetFloat("Dialog", dialogVol);
+            //}
+            //while (fading)//in case the sound effect fade call is still going(this will probably only occur if the above if statement doesn't trigger)
+            //{
+            //    yield return null;
+            //}
             dSource.clip = play.clip;
             dSource.volume = play.volume;
             dSource.Play();
             yield return new WaitForSeconds(play.clip.length);
 
             //any sound effects still playing are added to this array
-            Sound[] e = Array.FindAll(soundEffects, s => s.source.isPlaying && s.source.outputAudioMixerGroup.Equals(fadeGroup));
+            //Sound[] e = Array.FindAll(soundEffects, s => s.source.isPlaying && s.source.outputAudioMixerGroup.Equals(fadeGroup));
 
-            // if aything is in the array bring volume back up then return the sounds to the sound effect audio group
-            if (e != null)
-            {
-                //get the volume to fade the audio effects up to
-                float effectVol;
-                mixer.GetFloat("Effects", out effectVol);
-                effectVol = Mathf.Pow(10, effectVol / 20);//changes volume scale from -80 to 20 to 0.001 to 10
-                StartCoroutine(StartFade("Fade", .025f, effectVol));
-                while (fading)
-                {
-                    yield return null;
-                }
+            //// if aything is in the array bring volume back up then return the sounds to the sound effect audio group
+            //if (e != null)
+            //{
+            //    //get the volume to fade the audio effects up to
+            //    float effectVol;
+            //    mixer.GetFloat("Effects", out effectVol);
+            //    effectVol = Mathf.Pow(10, effectVol / 20);//changes volume scale from -80 to 20 to 0.001 to 10
+            //    StartCoroutine(StartFade("Fade", .025f, effectVol));
+            //    while (fading)
+            //    {
+            //        yield return null;
+            //    }
 
-                //narrow the array to anything still playing then put that back in the effects group
-                e = Array.FindAll(e, s => s.source.isPlaying);
-                if (e != null)
-                {
-                    foreach (Sound s in e)
-                    {
-                        s.source.outputAudioMixerGroup = effectsGroup;
-                    }
-                }
-            }
+            //    //narrow the array to anything still playing then put that back in the effects group
+            //    e = Array.FindAll(e, s => s.source.isPlaying);
+            //    if (e != null)
+            //    {
+            //        foreach (Sound s in e)
+            //        {
+            //            s.source.outputAudioMixerGroup = effectsGroup;
+            //        }
+            //    }
+            //}
 
             dPlaying = false;
-            play.played = true;
         }
         yield break;
     }

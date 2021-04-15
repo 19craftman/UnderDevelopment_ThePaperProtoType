@@ -13,14 +13,24 @@ public class Inventory : MonoBehaviour
     private bool colliding;
     private bool dragging;
     public bool inInven;
+    private bool inventoryOn; // this checks true when the inventory object is turned on
     // Start is called before the first frame update
     private void Awake()
     {
         inInven = false;
         colliding = false;
         dragging = false;
-        insideInventory = FindObjectOfType<InsideInventory>();
-        inventory = insideInventory.gameObject;
+        inventoryOn = false;
+    }
+
+    private void LateUpdate()
+    {
+        if(!inventoryOn && GameState.titleScreenComplete == true)
+        {
+            insideInventory = FindObjectOfType<InsideInventory>();
+            inventory = insideInventory.gameObject;
+            inventoryOn = true;
+        }
     }
     private void OnMouseDrag()
     {

@@ -5,57 +5,37 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     private AudioManager am;
-    private Sound firstClick;
-    private Sound subsequentClicks;
-    private int numClicks = 0;
-    private bool canClick = true;
-
-
-    [SerializeField] private GameObject[] obstacles;
+    [SerializeField] private string[] dialog;
+    private int numClicks;
+    bool canClick = true;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         am = FindObjectOfType<AudioManager>();
-        firstClick = am.soundLookUp("DoorRoom1");
-        subsequentClicks = am.soundLookUp("DoorRoom2");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        numClicks = 0;
     }
 
     private void OnMouseDown()
     {
-        if(canClick)
+        if(GameState.puzzleOneSolved && GameState.puzzleTwoSolved && canClick)
         {
+            StartCoroutine(playSound(dialog[numClicks]));
             numClicks++;
-            if (numClicks == 1)
-            {
-                StartCoroutine(soundPlaying(firstClick));
-            } else if (numClicks >=2)
-            {
-                StartCoroutine(soundPlaying(subsequentClicks));
-            }
         }
     }
 
-    IEnumerator soundPlaying(Sound s)
+    IEnumerator playSound(string i)
     {
         canClick = false;
-        am.playDialog(s.name);
+        Sound s = am.soundLookUp(i);
+        am.playDialog(i);
         while(s.played == false)
         {
             yield return null;
         }
-        if (GameState.doorsSetUp == false)
+        if(numClicks>=3)
         {
-            GameState.doorsSetUp = true;
-            foreach(GameObject a in obstacles)
-            {
-                a.SetActive(true);
-            }
+            //end game here
         }
         canClick = true;
     }

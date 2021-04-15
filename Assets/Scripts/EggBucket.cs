@@ -8,9 +8,11 @@ public class EggBucket : MonoBehaviour
     private bool dragging;
     private GameObject bucket;
     [SerializeField] private Sprite fullBucket;
+    private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         colliding = false;
         dragging = false;
         bucket = GameObject.FindGameObjectWithTag("Bucket");
@@ -42,7 +44,7 @@ public class EggBucket : MonoBehaviour
             GameState.eggsCollected++;
             if(GameState.eggsCollected==5)
             {
-                //play audio
+                am.playDialog("EggsCollected");
                 bucket.GetComponent<SpriteRenderer>().sprite = fullBucket;
                 bucket.AddComponent<MoveableObjects>();
             } else

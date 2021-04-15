@@ -16,4 +16,6 @@ public class GameState
     public static int chickenFed = 0;
     public static int eggsCollected = 0;
     public static bool eggSold = false;
+    public static bool dogEating = false;
+    public static int itemsTaken = 0;
 }

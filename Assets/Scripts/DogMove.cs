@@ -15,6 +15,8 @@ public class DogMove : MonoBehaviour
     [SerializeField] private Sprite empty, full;
 
     private Vector2 startPos, endPos;
+
+    private AudioManager am;
     
     // Start is called before the first frame update
     private void Awake()
@@ -49,6 +51,14 @@ public class DogMove : MonoBehaviour
             }
         }
     }
+    bool audioPlaying = false;
+    private void OnMouseDown()
+    {
+        if (!eating && !audioPlaying && !am.dPlaying)
+        {
+            am.playDialog("Dog3");
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -71,7 +81,9 @@ public class DogMove : MonoBehaviour
         eating = true;
         yield return StartCoroutine(moveDog(startPos, endPos));
         //play eat animation
+        GameState.dogEating = true;
         yield return new WaitForSeconds(eatTime);
+        GameState.dogEating = false;
 
         GetComponent<SpriteRenderer>().sprite = empty;
 

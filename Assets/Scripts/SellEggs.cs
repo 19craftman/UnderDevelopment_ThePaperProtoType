@@ -7,9 +7,11 @@ public class SellEggs : MonoBehaviour
     private bool colliding;
     private bool dragging;
     [SerializeField] private GameObject shopClerk;
+    private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         colliding = false;
         dragging = false;
     }
@@ -38,7 +40,7 @@ public class SellEggs : MonoBehaviour
         if (dragging && colliding)
         {
             GameState.eggSold = true;
-            //play audio here
+            am.playDialog("SellEggs");
             Destroy(gameObject);
         }
     }

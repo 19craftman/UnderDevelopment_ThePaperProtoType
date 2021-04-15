@@ -66,7 +66,7 @@ public class Piano : MonoBehaviour
                 
                 source.PlayOneShot(ac[i]);
                 i++;
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(3);
         }
         bool temp = true;
         for(int j=0; j < 3; j++)
@@ -81,8 +81,12 @@ public class Piano : MonoBehaviour
         source.Stop();
         if (correct)
         {
+            am.playDialog("PianoCorrect");
             Destroy(toActivate);
             Destroy(this);
+        } else
+        {
+            am.playDialog("PianoWrong");
         }
 
         playing = false; //enable clicking

@@ -14,9 +14,11 @@ public class FeedBucket : MonoBehaviour
     private bool overChicken;
     private GameObject chicken;
     private bool dragging;
+    private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         overCluckington = false;
         overChicken = false;
         dragging = false;
@@ -57,6 +59,7 @@ public class FeedBucket : MonoBehaviour
     {
         if (overCluckington && dragging && !GameState.cluckingtonFed)
         {
+            am.playDialog("CluckFed");
             GameState.cluckingtonFed = true;
             if(GameState.chickenFed >= 6)
             {
@@ -66,13 +69,20 @@ public class FeedBucket : MonoBehaviour
         }
         else if (overChicken && dragging)
         {
+            if(GameState.chickenFed==0)
+            {
+                am.playDialog("Feed1");
+            }
             Transform a = chicken.transform.GetChild(0);
             a.localScale = Vector3.one;
             a.gameObject.SetActive(true);
             chicken.transform.DetachChildren();
             Destroy(chicken);
             GameState.chickenFed++;
-            //play sound?
+            if(GameState.chickenFed==5)
+            {
+                am.playDialog("Feedlast");
+            }
         }
         else if (dragging)
         {

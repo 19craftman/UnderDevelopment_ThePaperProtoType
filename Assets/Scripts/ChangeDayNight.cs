@@ -7,10 +7,13 @@ public class ChangeDayNight : MonoBehaviour
     public GameObject[] dayRooms;
     public GameObject[] nightRooms;
 
+    private AudioManager am;
+
     public Sprite dayS, night;
 
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
     }
 
     private void OnMouseDown()
@@ -21,13 +24,18 @@ public class ChangeDayNight : MonoBehaviour
             {
                 swap(nightRooms, dayRooms);
                 GetComponent<SpriteRenderer>().sprite = night;
+                am.playDialog("Night");
             }
             else
             {
                 swap(dayRooms, nightRooms);
                 GetComponent<SpriteRenderer>().sprite = dayS;
+                am.playDialog("Day");
             }
             GameState.dayTime = !GameState.dayTime;
+        } else
+        {
+            am.playDialog("LeverBroken");
         }
     }
 

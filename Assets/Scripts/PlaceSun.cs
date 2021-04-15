@@ -12,22 +12,43 @@ public class PlaceSun : MonoBehaviour
     private bool dragging;
     [SerializeField] private bool isSun;
     [SerializeField] private GameObject goal;
+    AudioManager am;
+    Sound clockRoom;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         colliding = false;
         dragging = false;
     }
 
+    private void Start()
+    {
+        if(isSun)
+        {
+            clockRoom = am.soundLookUp("sunClick");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
         
     }
 
+    private void OnMouseDown()
+    {
+        if(isSun && !clockRoom.played && Camera.main.transform.position == new Vector3(18, -20, -10))
+        {
+            am.playDialog(clockRoom.name);
+        }
+    }
     private void OnMouseDrag()
     {
         dragging = true;
+        if(!am.dPlaying && isSun)
+        {
+            am.playDialog("DragSun");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,14 +73,14 @@ public class PlaceSun : MonoBehaviour
         {
             SpriteRenderer sp = goal.GetComponent<SpriteRenderer>();
             sp.sprite = gameObject.GetComponent<SpriteRenderer>().sprite;
-            sp.color = new Color(0, 0, 0, 1);
+            sp.color = new Color(1, 1, 1, 1);
 
             if(isSun)
             {
-                //play bad audio
+                am.playDialog("Sun");
             } else
             {
-                //play good audio
+                am.playDialog("GearPuzzle");
             }
             GameState.sunPlaced = true;
 

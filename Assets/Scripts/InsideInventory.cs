@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class InsideInventory : MonoBehaviour
 {
+    [SerializeField] private GameObject sun;
     private List<GameObject> containing;
     [SerializeField] private Transform[] inventorySlots;
     [SerializeField] private GameObject inventory;
+    private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
         containing = new List<GameObject>();
     }
 
@@ -23,9 +26,16 @@ public class InsideInventory : MonoBehaviour
     {
         if(containing.Count<4)
         {
+            if (item.Equals(sun))
+            {
+                am.playDialog("SunToolbox");
+            }
             containing.Add(item);
             positionItems();
             return true;
+        } else
+        {
+            am.playDialog("Toolbox");
         }
         return false;
     }

@@ -9,17 +9,33 @@ public class Scissor : MonoBehaviour
     [SerializeField] private Vector2 dropPos;
     [SerializeField] private float moveTime;
 
-    public bool colliding;
-    private bool dragging;
+    private Inventory inven;
+    private bool dragging, colliding, s1Played;
+    private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
     {
+        am = FindObjectOfType<AudioManager>();
+        inven = GetComponent<Inventory>();
         colliding = false;
         dragging = false;
+        s1Played = false;
     }
     private void OnMouseDrag()
     {
         dragging = true;
+    }
+
+    private void LateUpdate()
+    {
+        if(!s1Played)
+        {
+            if (!inven.inInven && transform.position.x < 8.7f && transform.position.y > 8)
+            {
+                am.playDialog("TitleScreenScissor");
+                s1Played = true;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +63,7 @@ public class Scissor : MonoBehaviour
             //rope.GetComponent<SpriteRenderer>().sprite = cutRope;
             //letter.GetComponent<SpriteRenderer>().sprite = cutLetter;
             Destroy(rope);
+            am.playDialog("TitleScreenCut");
             StartCoroutine(DropObject());
         }
         else if (dragging)
