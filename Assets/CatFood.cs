@@ -9,11 +9,16 @@ public class CatFood : MonoBehaviour
     private Sprite full;
     private Sprite empty;
     [SerializeField] private GameObject bowl;
+    private AudioManager am;
+    public Sound clip;
 
     private void Start()
     {
         dragging = false;
         colliding = false;
+        am = FindObjectOfType<AudioManager>();
+
+       // clip = am.soundLookUp("Name");
     }
 
     private void OnMouseDrag()
@@ -28,4 +33,18 @@ public class CatFood : MonoBehaviour
             colliding = true;
         }
     }
+
+
+    private void OnMouseUp()
+    {
+        if(dragging && colliding)
+        {
+           // am.playDialog(clip.name);
+           
+        }
+    }
+
+    //while(!clip.played) {
+    //    yield return null;
+    //    }
 }
