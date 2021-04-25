@@ -28,7 +28,6 @@ public class Inventory : MonoBehaviour
         if(!inventoryOn && GameState.titleScreenComplete == true)
         {
             insideInventory = FindObjectOfType<InsideInventory>();
-            inventory = insideInventory.gameObject;
             inventoryOn = true;
         }
     }
@@ -44,8 +43,9 @@ public class Inventory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.Equals(inventory))
+        if (collision.gameObject.CompareTag("Inventory"))
         {
+            inventory = collision.gameObject;
             colliding = true;
         }
 
@@ -55,6 +55,7 @@ public class Inventory : MonoBehaviour
     {
         if (colliding && collision.gameObject.Equals(inventory))
         {
+            inventory = null;
             colliding = false;
         }
     }

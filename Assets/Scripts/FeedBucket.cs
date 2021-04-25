@@ -61,10 +61,6 @@ public class FeedBucket : MonoBehaviour
         {
             am.playDialog("CluckFed");
             GameState.cluckingtonFed = true;
-            if(GameState.chickenFed >= 6)
-            {
-                Destroy(gameObject);
-            }
             dragging = false;
         }
         else if (overChicken && dragging)
@@ -76,6 +72,7 @@ public class FeedBucket : MonoBehaviour
             Transform a = chicken.transform.GetChild(0);
             a.localScale = Vector3.one;
             a.gameObject.SetActive(true);
+            a.gameObject.GetComponent<BoxCollider2D>().enabled = true;
             chicken.transform.DetachChildren();
             Destroy(chicken);
             GameState.chickenFed++;

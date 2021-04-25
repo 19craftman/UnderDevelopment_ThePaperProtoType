@@ -53,6 +53,7 @@ public class InsideInventory : MonoBehaviour
         {
             item.transform.SetParent(inventorySlots[i]);
             item.transform.localPosition = Vector3.zero;
+            i++;
         }
     }
 

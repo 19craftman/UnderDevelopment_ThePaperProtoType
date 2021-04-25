@@ -25,7 +25,7 @@ public class Piano : MonoBehaviour
     public AudioClip[] ac;
     private void LateUpdate()
     {
-        if(pianoKeys.Count>=3)
+        if(pianoKeys.Count>=3&& !playing)
         {
             ac = pianoKeys.ToArray();
             pianoKeys.Clear();
@@ -56,6 +56,7 @@ public class Piano : MonoBehaviour
     IEnumerator playNotes(AudioClip[] ac)
     {
         playing = true;//disable clicking
+
         int i = 0;
         while(i<3)
         {

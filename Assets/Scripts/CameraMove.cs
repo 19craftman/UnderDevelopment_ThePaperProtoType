@@ -60,10 +60,8 @@ public class CameraMove : MonoBehaviour
         }
         if(!am.dPlaying && transform.position == new Vector3(0, -10, -10))
         {
-            Debug.Log("store");
             if(!storeClosed.played && !GameState.dayTime)
             {
-                Debug.Log("closed");
                 am.playDialog(storeClosed.name);
             } else if (!storeOpen.played && GameState.dayTime)
             {
@@ -81,17 +79,6 @@ public class CameraMove : MonoBehaviour
             //    am.playDialog(clock2.name);
             //}
         } 
-
-        //if (timer >= 180 && transform.position == new Vector3(18, -10, -10)) 
-        //{
-        //    am.playDialog("Hints1");
-        //    timer = 0;
-        //}
-        //else
-        //{
-        //    timer += Time.deltaTime;
-        //}
-
     }
 
     public void Left()

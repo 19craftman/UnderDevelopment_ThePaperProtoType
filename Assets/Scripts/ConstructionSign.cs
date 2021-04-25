@@ -5,17 +5,17 @@ using UnityEngine;
 public class ConstructionSign : MonoBehaviour
 {
     private AudioManager am;
-    private Sound firstClick;
-    private Sound subsequentClicks;
     private int numClicks = 0;
     private bool canClick = true;
+    private SpriteRenderer sr;
 
-
+    [SerializeField] private Sprite[] sprites;
     [SerializeField] private GameObject obstacles;
     // Start is called before the first frame update
     void Start()
     {
         am = FindObjectOfType<AudioManager>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -49,6 +49,10 @@ public class ConstructionSign : MonoBehaviour
 
             am.playDialog("DoorRoom5");
             Destroy(gameObject);
+        } else
+        {
+            //sr.sprite = sprites[numClicks - 1];
+            Debug.Log("door room sign sprite change");
         }
         canClick = true;
     }
