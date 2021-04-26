@@ -1,0 +1,1136 @@
+fileFormatVersion: 2
+guid: 048af8ed557cb4bce9f0643aab611cc1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3384356821002204998
+    second: titleRoom_0
+  - first:
+      213: 6702471128113499751
+    second: titleRoom_1
+  - first:
+      213: -2779535240456403615
+    second: titleRoom_2
+  - first:
+      213: -5291221967979750508
+    second: titleRoom_3
+  - first:
+      213: -8479871940975857598
+    second: titleRoom_4
+  - first:
+      213: -7048916728528014314
+    second: titleRoom_5
+  - first:
+      213: -5040592411922150266
+    second: titleRoom_6
+  - first:
+      213: -3790261453958786752
+    second: titleRoom_7
+  - first:
+      213: -1881273806317132404
+    second: titleRoom_8
+  - first:
+      213: -6345492813069946913
+    second: titleRoom_9
+  - first:
+      213: -2407266187812284112
+    second: titleRoom_10
+  - first:
+      213: -6019739429133690263
+    second: titleRoom_11
+  - first:
+      213: 8570195840125280332
+    second: titleRoom_12
+  - first:
+      213: 5071467746223536319
+    second: titleRoom_13
+  - first:
+      213: 2727713850906633544
+    second: titleRoom_14
+  - first:
+      213: 4878651317320818173
+    second: titleRoom_15
+  - first:
+      213: 2535879714098246965
+    second: titleRoom_16
+  - first:
+      213: -2776469408572620656
+    second: titleRoom_17
+  - first:
+      213: 4712802880922177504
+    second: titleRoom_18
+  - first:
+      213: 3003296671286406901
+    second: titleRoom_19
+  - first:
+      213: 7424643849787599212
+    second: titleRoom_20
+  - first:
+      213: -2642506115111639898
+    second: titleRoom_21
+  - first:
+      213: 6629647179336777214
+    second: titleRoom_22
+  - first:
+      213: 7281962107641415962
+    second: titleRoom_23
+  - first:
+      213: 3908021428963256147
+    second: titleRoom_24
+  - first:
+      213: -3296530701962115383
+    second: titleRoom_25
+  - first:
+      213: -7018706207903643179
+    second: titleRoom_26
+  - first:
+      213: -8526535066356654263
+    second: titleRoom_27
+  - first:
+      213: 7815765807162140151
+    second: titleRoom_28
+  - first:
+      213: 6811226589557374154
+    second: titleRoom_29
+  - first:
+      213: -1861350290679784307
+    second: titleRoom_30
+  - first:
+      213: -7412269691110316198
+    second: titleRoom_31
+  - first:
+      213: 375910538698567512
+    second: titleRoom_32
+  - first:
+      213: 5386344673729757348
+    second: titleRoom_33
+  - first:
+      213: 5345440317160583359
+    second: titleRoom_34
+  - first:
+      213: -9006319626984761606
+    second: titleRoom_35
+  - first:
+      213: -2531274313614361709
+    second: titleRoom_36
+  - first:
+      213: -2739741650015819485
+    second: titleRoom_37
+  - first:
+      213: 2141681014203537967
+    second: titleRoom_38
+  - first:
+      213: 6849328362161750957
+    second: titleRoom_39
+  - first:
+      213: -4816851769330351439
+    second: titleRoom_40
+  - first:
+      213: 716191936638886270
+    second: titleRoom_41
+  - first:
+      213: -8333935736227020368
+    second: titleRoom_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: titleRoom_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 898
+        width: 127
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b10df896a7fe20800000000000000
+      internalID: 3384356821002204998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 900
+        width: 94
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e4484daf5f30d50800000000000000
+      internalID: 6702471128113499751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 894
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1658ae7ec6b1d69d0800000000000000
+      internalID: -2779535240456403615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_3
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 894
+        width: 69
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bd2da77adc196b0800000000000000
+      internalID: -5291221967979750508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 889
+        width: 94
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240f451e561715a80800000000000000
+      internalID: -8479871940975857598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_5
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 862
+        width: 39
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61477c805973d2e90800000000000000
+      internalID: -7048916728528014314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 762
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cc9d558e73c0ab0800000000000000
+      internalID: -5040592411922150266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 760
+        width: 71
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0415eee0a49466bc0800000000000000
+      internalID: -3790261453958786752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 764
+        width: 115
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c856839c07f54e5e0800000000000000
+      internalID: -1881273806317132404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 758
+        width: 71
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfeb2808e740f7a0800000000000000
+      internalID: -6345492813069946913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 757
+        width: 97
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039d3ab082ca79ed0800000000000000
+      internalID: -2407266187812284112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 760
+        width: 89
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ad21612e6957ca0800000000000000
+      internalID: -6019739429133690263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_12
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 765
+        width: 80
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40a232b5b37fe670800000000000000
+      internalID: 8570195840125280332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 764
+        width: 95
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8318f9b09716640800000000000000
+      internalID: 5071467746223536319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_14
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 760
+        width: 71
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845e33c9b49cad520800000000000000
+      internalID: 2727713850906633544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_15
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 765
+        width: 94
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd16ef568374b340800000000000000
+      internalID: 4878651317320818173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_16
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 772
+        width: 108
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535f1ff0a21413320800000000000000
+      internalID: 2535879714098246965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_17
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 822
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0904a4488cff779d0800000000000000
+      internalID: -2776469408572620656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_18
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 773
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efcdcd204d376140800000000000000
+      internalID: 4712802880922177504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_19
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 641
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fea32f096adda920800000000000000
+      internalID: 3003296671286406901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_20
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 639
+        width: 75
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69e0627e32a90760800000000000000
+      internalID: 7424643849787599212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 629
+        width: 71
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a429fb50bee35bd0800000000000000
+      internalID: -2642506115111639898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 627
+        width: 79
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdf986fbfc310c50800000000000000
+      internalID: 6629647179336777214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_23
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 626
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1942d594f9be0560800000000000000
+      internalID: 7281962107641415962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_24
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 627
+        width: 81
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35728f7b8c41c3630800000000000000
+      internalID: 3908021428963256147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_25
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 619
+        width: 69
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c60166dace5042d0800000000000000
+      internalID: -3296530701962115383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_26
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 615
+        width: 94
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9031ff3eb889e90800000000000000
+      internalID: -7018706207903643179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 507
+        width: 81
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f56ec5889aba980800000000000000
+      internalID: -8526535066356654263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 493
+        width: 91
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f52b87879d277c60800000000000000
+      internalID: 7815765807162140151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_29
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 498
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc334bee76568e50800000000000000
+      internalID: 6811226589557374154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_30
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 498
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1671c5c72b26e0800000000000000
+      internalID: -1861350290679784307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_31
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 493
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57a9f1ecf3522990800000000000000
+      internalID: -7412269691110316198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_32
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 495
+        width: 94
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f247ea4a0873500800000000000000
+      internalID: 375910538698567512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_33
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 492
+        width: 83
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0ca7351f320ca40800000000000000
+      internalID: 5386344673729757348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_34
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 487
+        width: 80
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb07868a5a1de2a40800000000000000
+      internalID: 5345440317160583359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_35
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 481
+        width: 71
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6d1fb4400230380800000000000000
+      internalID: -9006319626984761606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_36
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 471
+        width: 100
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bf1fb4c6b1fdcd0800000000000000
+      internalID: -2531274313614361709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_37
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 440
+        width: 154
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329e67e2c7b7af9d0800000000000000
+      internalID: -2739741650015819485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_38
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 430
+        width: 121
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2adcc90987c8bd10800000000000000
+      internalID: 2141681014203537967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_39
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 394
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3c8a82bd3bd0f50800000000000000
+      internalID: 6849328362161750957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_40
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 64
+        width: 448
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b24a5926da172db0800000000000000
+      internalID: -4816851769330351439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_41
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 5
+        width: 344
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e712c5695cc60f900800000000000000
+      internalID: 716191936638886270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleRoom_42
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 274
+        width: 158
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1414d5a99e75c80800000000000000
+      internalID: -8333935736227020368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
