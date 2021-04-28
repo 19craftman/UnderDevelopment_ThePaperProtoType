@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InsideInventory : MonoBehaviour
 {
-    [SerializeField] private GameObject sun;
+    [SerializeField] private GameObject sun, bHammer;
     private List<GameObject> containing;
     [SerializeField] private Transform[] inventorySlots;
     [SerializeField] private GameObject inventory;
@@ -29,6 +29,9 @@ public class InsideInventory : MonoBehaviour
             if (item.Equals(sun))
             {
                 am.playDialog("SunToolbox");
+            } else if(item.Equals(bHammer))
+            {
+                //am.playDialog("bhToolbox");
             }
             containing.Add(item);
             positionItems();

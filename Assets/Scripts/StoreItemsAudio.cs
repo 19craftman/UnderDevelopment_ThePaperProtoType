@@ -35,6 +35,10 @@ public class StoreItemsAudio : MonoBehaviour
             am.playDialog(c);
             GameState.itemsTaken++;
             Destroy(this);
+        } 
+        else
+        {
+            Destroy(this);
         }
     }
 }

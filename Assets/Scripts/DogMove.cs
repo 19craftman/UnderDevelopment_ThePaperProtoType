@@ -17,7 +17,8 @@ public class DogMove : MonoBehaviour
     private Vector2 startPos, endPos;
 
     private AudioManager am;
-    
+
+    bool audioPlaying = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -51,10 +52,10 @@ public class DogMove : MonoBehaviour
             }
         }
     }
-    bool audioPlaying = false;
+    
     private void OnMouseDown()
     {
-        if (!eating && !audioPlaying && !am.dPlaying)
+        if (spBowl.sprite!=full && !audioPlaying && !am.dPlaying)
         {
             am.playDialog("Dog3");
         }

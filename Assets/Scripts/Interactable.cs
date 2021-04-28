@@ -13,10 +13,6 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if(gameObject.name == "rope")
-        {
-            Debug.Log("work");
-        }
         highlight.SetActive(true);
     }
 
