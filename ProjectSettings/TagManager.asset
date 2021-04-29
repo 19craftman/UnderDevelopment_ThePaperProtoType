@@ -11,6 +11,7 @@ TagManager:
   - Inventory
   - Chicken
   - Bucket
+  - Egg
   layers:
   - Default
   - TransparentFX

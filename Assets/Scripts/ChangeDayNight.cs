@@ -8,6 +8,8 @@ public class ChangeDayNight : MonoBehaviour
     public GameObject[] nightRooms;
 
     private AudioManager am;
+    [SerializeField] private Animator animGear;
+    [SerializeField] private Animator animClock;
 
     public Sprite dayS, night;
 
@@ -20,6 +22,7 @@ public class ChangeDayNight : MonoBehaviour
     {
         if(GameState.sunPlaced)
         {
+            animClock.SetTrigger("clockHands");
             if(GameState.dayTime)
             {
                 swap(nightRooms, dayRooms);
@@ -36,6 +39,7 @@ public class ChangeDayNight : MonoBehaviour
         } else
         {
             am.playDialog("LeverBroken");
+            animGear.SetTrigger("broken");
         }
     }
 

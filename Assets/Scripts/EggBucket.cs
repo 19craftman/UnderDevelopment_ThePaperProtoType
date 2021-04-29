@@ -30,8 +30,9 @@ public class EggBucket : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (lastEgg)
+        if (GameState.eggsCollected>=5 && GetComponent<Inventory>()==null)
         {
+            Debug.Log("here");
             gameObject.AddComponent<Inventory>();
             lastEgg = false;
         }
@@ -84,9 +85,9 @@ public class EggBucket : MonoBehaviour
             }
         if (overCluckington && dragging && gameObject.GetComponent<Inventory>() == true)
         {
-          
-                Debug.Log("Hi");
-           
+            cluckington.transform.GetChild(0).gameObject.SetActive(true);
+            am.playDialog("cluckEgg");
+            Destroy(gameObject);
             //Put egged cluckinton audio here
         }
     }

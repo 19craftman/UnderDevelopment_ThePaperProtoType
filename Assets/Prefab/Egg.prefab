@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4201221282646147167}
   m_Layer: 0
   m_Name: Egg
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +145,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.59375, y: 1.375}
+  m_Size: {x: 0.49, y: 0.72}
   m_EdgeRadius: 0
 --- !u!114 &8494052221940217653
 MonoBehaviour:

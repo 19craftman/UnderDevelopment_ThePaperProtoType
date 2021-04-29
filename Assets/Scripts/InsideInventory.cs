@@ -31,7 +31,10 @@ public class InsideInventory : MonoBehaviour
                 am.playDialog("SunToolbox");
             } else if(item.Equals(bHammer))
             {
-                //am.playDialog("bhToolbox");
+                am.playDialog("bhToolbox");
+            } else if (item.CompareTag("Egg"))
+            {
+                am.playDialog("inventoryEgg");
             }
             containing.Add(item);
             positionItems();

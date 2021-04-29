@@ -48,6 +48,8 @@ public class brittleHammer : MonoBehaviour
         if(colliding && dragging)
         {
             dragging = false;
+            am.playDialog("bhWall");
+            Destroy(gameObject);
         }
     }
 }
