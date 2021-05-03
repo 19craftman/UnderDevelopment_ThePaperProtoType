@@ -70,13 +70,10 @@ public class FeedBucket : MonoBehaviour
                 am.playDialog("Feed1");
             }
             Transform a = chicken.transform.GetChild(0);
-            //Debug.Log(a.name);
             a.localScale = Vector3.one;
             a.gameObject.SetActive(true);
 
             a.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-
-            //Debug.Log(a.gameObject.activeInHierarchy);
             StartCoroutine(destroyChicken(chicken));
             chicken = null;
 
@@ -85,8 +82,6 @@ public class FeedBucket : MonoBehaviour
             {
                 am.playDialog("Feedlast");
             }
-        
-            //Debug.Log("bottom");
         }
         else if (dragging)
         {
@@ -98,7 +93,7 @@ public class FeedBucket : MonoBehaviour
     {
         c.transform.DetachChildren();
         c.tag = "Untagged";
-
+        c.GetComponent<ClickChicken>().enabled = false;
         Vector2 startPos = c.transform.position;
         Vector2 endPos = new Vector2(-14.9f, -23.6f);
         float elapsedTime = 0f;

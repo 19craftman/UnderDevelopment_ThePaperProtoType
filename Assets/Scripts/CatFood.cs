@@ -52,9 +52,9 @@ public class CatFood : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if(dragging && colliding)
+        if(!GameState.puzzleOneSolved && dragging && colliding)
         {
-            Debug.Log(1);
+
             StartCoroutine(waitForDialog());
            
         }
