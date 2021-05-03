@@ -84,8 +84,6 @@ public class PlaceSun : MonoBehaviour
             }
             GameState.sunPlaced = true;
 
-            
-
             Destroy(gameObject);
         } 
         else if(dragging)

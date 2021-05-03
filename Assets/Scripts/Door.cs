@@ -6,12 +6,15 @@ public class Door : MonoBehaviour
 {
     private AudioManager am;
     [SerializeField] private string[] dialog;
+    [SerializeField] private Sprite[] sprites;
+    private SpriteRenderer sr;
     private int numClicks;
     bool canClick = true;
     // Start is called before the first frame update
     private void Start()
     {
         am = FindObjectOfType<AudioManager>();
+        sr = GetComponent<SpriteRenderer>();
         numClicks = 0;
     }
 
@@ -19,6 +22,7 @@ public class Door : MonoBehaviour
     {
         if(GameState.puzzleOneSolved && GameState.puzzleTwoSolved && canClick)
         {
+            sr.sprite = sprites[numClicks];
             StartCoroutine(playSound(dialog[numClicks]));
             numClicks++;
         }

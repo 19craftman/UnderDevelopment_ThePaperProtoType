@@ -12,7 +12,7 @@ public class DogMove : MonoBehaviour
     private GameObject dogFood;
 
     private SpriteRenderer spBowl, spDog;
-    [SerializeField] private Sprite empty, full;
+    [SerializeField] private Sprite empty, full, sleepDog;
 
     private Vector2 startPos, endPos;
 
@@ -81,20 +81,28 @@ public class DogMove : MonoBehaviour
     {
         eating = true;
         yield return StartCoroutine(moveDog(startPos, endPos));
-        //play eat animation
-        GameState.dogEating = true;
-        yield return new WaitForSeconds(eatTime);
-        GameState.dogEating = false;
-
-        GetComponent<SpriteRenderer>().sprite = empty;
-
-        //stop eat animation
-        if(GameState.puzzleOneSolved == false)
+        if(GameState.puzzleOneSolved)
         {
-            spDog.flipX = true;
-            yield return StartCoroutine(moveDog(endPos, startPos));
-            spDog.flipX = false;
+            spDog.sprite = sleepDog;
         }
+        else
+        {
+            //play eat animation
+            GameState.dogEating = true;
+            yield return new WaitForSeconds(eatTime);
+            GameState.dogEating = false;
+
+            GetComponent<SpriteRenderer>().sprite = empty;
+
+            //stop eat animation
+            if (GameState.puzzleOneSolved == false)
+            {
+                spDog.flipX = true;
+                yield return StartCoroutine(moveDog(endPos, startPos));
+                spDog.flipX = false;
+            }
+        }
+        
         eating = false;
     }
     IEnumerator moveDog(Vector2 s, Vector2 e)

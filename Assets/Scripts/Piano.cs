@@ -13,7 +13,7 @@ public class Piano : MonoBehaviour
     private string[] cluckSounds = new string[] { "Cluck2", "Cluck3", "Cluck4" };
     private int index;
 
-    [SerializeField] private GameObject toActivate;
+    [SerializeField] private GameObject pianoOverlay, notes;
 
     private bool playing;
 
@@ -43,7 +43,7 @@ public class Piano : MonoBehaviour
         {
             if(!playing)
             {
-                toActivate.SetActive(!toActivate.activeInHierarchy);
+                pianoOverlay.SetActive(!pianoOverlay.activeInHierarchy);
             }
         }
         else
@@ -83,7 +83,8 @@ public class Piano : MonoBehaviour
         if (correct)
         {
             am.playDialog("PianoCorrect");
-            Destroy(toActivate);
+            Destroy(pianoOverlay);
+            notes.SetActive(true);
             Destroy(this);
         } else
         {

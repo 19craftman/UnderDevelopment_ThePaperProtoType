@@ -8,7 +8,6 @@ public class SleepyDog : MonoBehaviour
     private bool isAsleep;
     float marginX = .05f;
     int verticleRays = 4;
-    public GameObject winText;
     AudioManager am;
     // Start is called before the first frame update
     void Start()
@@ -28,12 +27,10 @@ public class SleepyDog : MonoBehaviour
                 GetComponent<BoxCollider2D>().bounds.size.y
             );
             isAsleep = abovePiano();
-        }
-        else if(isAsleep && !winText.activeInHierarchy)
-        {
-            winText.SetActive(true);
-            GameState.puzzleOneSolved = true;
-            am.playDialog("EngGameTemp");
+            if(isAsleep)
+            {
+                GameState.puzzleOneSolved = true;
+            }
         }
     }
 

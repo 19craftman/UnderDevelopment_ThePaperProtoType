@@ -63,7 +63,7 @@ public class FeedBucket : MonoBehaviour
             GameState.cluckingtonFed = true;
             dragging = false;
         }
-        else if (overChicken && dragging)
+        else if (overChicken && dragging && chicken!=null)
         {
             if(GameState.chickenFed==0)
             {
@@ -77,8 +77,9 @@ public class FeedBucket : MonoBehaviour
             a.gameObject.GetComponent<BoxCollider2D>().enabled = true;
 
             //Debug.Log(a.gameObject.activeInHierarchy);
-            chicken.transform.DetachChildren();
-            Destroy(chicken);
+            StartCoroutine(destroyChicken(chicken));
+            chicken = null;
+
             GameState.chickenFed++;
             if(GameState.chickenFed==5)
             {
@@ -91,5 +92,24 @@ public class FeedBucket : MonoBehaviour
         {
             dragging = false;
         }
+    }
+
+    IEnumerator destroyChicken(GameObject c)
+    {
+        c.transform.DetachChildren();
+        c.tag = "Untagged";
+
+        Vector2 startPos = c.transform.position;
+        Vector2 endPos = new Vector2(-14.9f, -23.6f);
+        float elapsedTime = 0f;
+        float moveTime = .5f*Vector2.Distance(endPos,startPos);
+        while (elapsedTime < moveTime)
+        {
+            c.transform.position = Vector2.Lerp(startPos, endPos, elapsedTime / moveTime);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        Destroy(c);
     }
 }
