@@ -15,6 +15,6 @@ public class SliderScript : MonoBehaviour
 
    public void changeImage()
     {
-        i.fillAmount = s.value / s.maxValue;
+        i.fillAmount =( s.value+20) / (s.maxValue+20);
     }
 }

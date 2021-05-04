@@ -197,7 +197,6 @@ public class AudioManager : MonoBehaviour
             dSource.volume = play.volume;
             dSource.Play();
             yield return new WaitForSeconds(play.clip.length);
-
             //any sound effects still playing are added to this array
             //Sound[] e = Array.FindAll(soundEffects, s => s.source.isPlaying && s.source.outputAudioMixerGroup.Equals(fadeGroup));
 
