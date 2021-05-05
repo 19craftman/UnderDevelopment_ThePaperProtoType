@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: 66691e2654402458fb52e81476a6d094
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3951696511707109549
+    second: hammerBreakingWallSpriteSheet_0
+  - first:
+      213: 2201188101870744076
+    second: hammerBreakingWallSpriteSheet_1
+  - first:
+      213: -4669882862234318168
+    second: hammerBreakingWallSpriteSheet_2
+  - first:
+      213: 3909398767889920989
+    second: hammerBreakingWallSpriteSheet_3
+  - first:
+      213: -8562998789528683542
+    second: hammerBreakingWallSpriteSheet_4
+  - first:
+      213: -8031037559448478014
+    second: hammerBreakingWallSpriteSheet_5
+  - first:
+      213: 6921557214480419715
+    second: hammerBreakingWallSpriteSheet_6
+  - first:
+      213: -8720733490241317462
+    second: hammerBreakingWallSpriteSheet_7
+  - first:
+      213: -1082248418405501244
+    second: hammerBreakingWallSpriteSheet_8
+  - first:
+      213: -593893002782111963
+    second: hammerBreakingWallSpriteSheet_9
+  - first:
+      213: -3765726250790223567
+    second: hammerBreakingWallSpriteSheet_10
+  - first:
+      213: 8274143076110614926
+    second: hammerBreakingWallSpriteSheet_11
+  - first:
+      213: 4434296990431379213
+    second: hammerBreakingWallSpriteSheet_12
+  - first:
+      213: 6923862224902627948
+    second: hammerBreakingWallSpriteSheet_13
+  - first:
+      213: 7433485686636784020
+    second: hammerBreakingWallSpriteSheet_14
+  - first:
+      213: -8497977078644294596
+    second: hammerBreakingWallSpriteSheet_15
+  - first:
+      213: 3610843002101150381
+    second: hammerBreakingWallSpriteSheet_16
+  - first:
+      213: 8360747901370932721
+    second: hammerBreakingWallSpriteSheet_17
+  - first:
+      213: 4600471784717313992
+    second: hammerBreakingWallSpriteSheet_18
+  - first:
+      213: 578787343477084537
+    second: hammerBreakingWallSpriteSheet_19
+  - first:
+      213: 8525052574990881758
+    second: hammerBreakingWallSpriteSheet_20
+  - first:
+      213: -6609201708398714787
+    second: hammerBreakingWallSpriteSheet_21
+  - first:
+      213: -1495689060453425420
+    second: hammerBreakingWallSpriteSheet_22
+  - first:
+      213: -6801376135333799287
+    second: hammerBreakingWallSpriteSheet_23
+  - first:
+      213: -1986378856549376317
+    second: hammerBreakingWallSpriteSheet_24
+  - first:
+      213: 8762886995031636564
+    second: hammerBreakingWallSpriteSheet_25
+  - first:
+      213: 9078309168854385607
+    second: hammerBreakingWallSpriteSheet_26
+  - first:
+      213: -4685028777508095883
+    second: hammerBreakingWallSpriteSheet_27
+  - first:
+      213: -7299051922526756261
+    second: hammerBreakingWallSpriteSheet_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 526
+        width: 100
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8d3785a0f37d630800000000000000
+      internalID: 3951696511707109549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 539
+        width: 108
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0272df8ae03c8e10800000000000000
+      internalID: 2201188101870744076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 530
+        width: 102
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aac6d5674e313fb0800000000000000
+      internalID: -4669882862234318168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 632
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3bd6d6779f04630800000000000000
+      internalID: 3909398767889920989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 611
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebfa0a38fd1a2980800000000000000
+      internalID: -8562998789528683542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 595
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ced043d3e50c8090800000000000000
+      internalID: -8031037559448478014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 600
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bc5a55d9f4e0060800000000000000
+      internalID: 6921557214480419715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 578
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa55055581bb9f680800000000000000
+      internalID: -8720733490241317462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 579
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c636362cc41bf0f0800000000000000
+      internalID: -1082248418405501244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 568
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5270596e57112c7f0800000000000000
+      internalID: -593893002782111963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 571
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13109443de37dbbc0800000000000000
+      internalID: -3765726250790223567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 570
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81c4581a49a3d270800000000000000
+      internalID: 8274143076110614926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 564
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ffe3f6e99c98d30800000000000000
+      internalID: 4434296990431379213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 554
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6221156200861060800000000000000
+      internalID: 6923862224902627948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 562
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499afe209db092760800000000000000
+      internalID: 7433485686636784020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 536
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cbef50fde111a80800000000000000
+      internalID: -8497977078644294596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 542
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2b1ff449a4c1230800000000000000
+      internalID: 3610843002101150381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 534
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd9ecd4be7570470800000000000000
+      internalID: 8360747901370932721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 521
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7684fb6b828df30800000000000000
+      internalID: 4600471784717313992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 526
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9719178b504480800800000000000000
+      internalID: 578787343477084537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 515
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed35cd736221f4670800000000000000
+      internalID: 8525052574990881758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 508
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d506df130166744a0800000000000000
+      internalID: -6609201708398714787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 511
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe5c3959be3e3be0800000000000000
+      internalID: -1495689060453425420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 504
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a1c9da078ac91a0800000000000000
+      internalID: -6801376135333799287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 499
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce170a44f6fe64e0800000000000000
+      internalID: -1986378856549376317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 491
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a30c15b470c9970800000000000000
+      internalID: 8762886995031636564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 489
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3ccb21712acfd70800000000000000
+      internalID: 9078309168854385607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 474
+        width: 95
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b522362f6bfeb0800000000000000
+      internalID: -4685028777508095883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammerBreakingWallSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 25
+        width: 222
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5229a0d2fe84ba90800000000000000
+      internalID: -7299051922526756261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

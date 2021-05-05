@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: brokenGears
+  m_Name: walkout5
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1765760042425005314, guid: 4c30be02e51694644a0ee54d9ab86643,
+      value: {fileID: 7190354533095521692, guid: d61040297701e49c5bcb424306820e1f,
         type: 3}
     - time: 0.5
-      value: {fileID: 2212299454412409286, guid: 4c30be02e51694644a0ee54d9ab86643,
+      value: {fileID: 8306140649212559151, guid: d61040297701e49c5bcb424306820e1f,
         type: 3}
-    - time: 0.73333335
-      value: {fileID: 2212299454412409286, guid: 4c30be02e51694644a0ee54d9ab86643,
+    - time: 0.6666667
+      value: {fileID: 8306140649212559151, guid: d61040297701e49c5bcb424306820e1f,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,15 +47,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1765760042425005314, guid: 4c30be02e51694644a0ee54d9ab86643, type: 3}
-    - {fileID: 2212299454412409286, guid: 4c30be02e51694644a0ee54d9ab86643, type: 3}
-    - {fileID: 2212299454412409286, guid: 4c30be02e51694644a0ee54d9ab86643, type: 3}
+    - {fileID: 7190354533095521692, guid: d61040297701e49c5bcb424306820e1f, type: 3}
+    - {fileID: 8306140649212559151, guid: d61040297701e49c5bcb424306820e1f, type: 3}
+    - {fileID: 8306140649212559151, guid: d61040297701e49c5bcb424306820e1f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
