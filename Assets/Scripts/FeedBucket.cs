@@ -94,7 +94,7 @@ public class FeedBucket : MonoBehaviour
         c.transform.DetachChildren();
         c.tag = "Untagged";
         Destroy(c.GetComponent<ClickChicken>());
-        
+        c.GetComponent<Animator>().SetTrigger("walkout");
         Vector2 startPos = c.transform.position;
         Vector2 endPos = new Vector2(-14.9f, -23.6f);
         float elapsedTime = 0f;

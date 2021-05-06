@@ -5,7 +5,7 @@ using UnityEngine;
 public class BrickWall : MonoBehaviour
 {
     [SerializeField] private GameObject wall;
-    //[SerializeField] private Sprite broken;
+    [SerializeField] private Sprite broken;
     private bool colliding;
     private bool dragging;
     private AudioManager am;
@@ -56,8 +56,7 @@ public class BrickWall : MonoBehaviour
     {
         if (colliding && dragging)
         {
-            //wall.GetComponent<SpriteRenderer>().sprite = broken;
-            Destroy(wall);
+            GetComponent<Animator>().SetTrigger("go");
             am.playDialog("DoorRoomBreak");
             GameState.puzzleTwoSolved = true;
         }
@@ -65,5 +64,12 @@ public class BrickWall : MonoBehaviour
         {
             dragging = false;
         }
+    }
+
+    public void deleteObject()
+    {
+        wall.GetComponent<SpriteRenderer>().sprite = broken;
+        wall.GetComponent<BoxCollider2D>().enabled = false;
+        Destroy(gameObject);
     }
 }

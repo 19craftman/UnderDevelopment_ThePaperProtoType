@@ -43,7 +43,6 @@ public class Scissor : MonoBehaviour
         
         if (collision.gameObject.Equals(rope))
         {
-            Debug.Log(1);
             colliding = true;
         }
 
@@ -64,7 +63,9 @@ public class Scissor : MonoBehaviour
             //letter.GetComponent<SpriteRenderer>().sprite = cutLetter;
             Destroy(rope);
             am.playDialog("TitleScreenCut");
-            StartCoroutine(DropObject());
+
+            letter.GetComponent<Animator>().SetTrigger("go");
+            Destroy(gameObject);
         }
         else if (dragging)
         {
@@ -72,37 +73,4 @@ public class Scissor : MonoBehaviour
         }
     }
 
-    IEnumerator DropObject()
-    {
-        float timeElapsed = 0;
-        while (timeElapsed < moveTime)
-        {
-            letter.transform.position = Vector2.Lerp(letter.transform.position, dropPos, timeElapsed / moveTime);
-            timeElapsed += Time.deltaTime;
-            yield return null;
-        }
-        timeElapsed = 0;
-        Vector3 startPos = cam.transform.position;
-        Vector3 shakePos = startPos;
-        int count = 0;
-        
-        while(timeElapsed< moveTime)
-        {
-            float offsetY = ((moveTime - timeElapsed) / moveTime) * 0.2f;
-            
-            if (count % 2 != 0)
-            {
-                offsetY = -offsetY;
-            }
-            shakePos.y += offsetY;
-
-            cam.transform.position = shakePos;
-            timeElapsed += Time.deltaTime;
-            count++;
-            yield return null;
-        }
-        cam.transform.position = startPos;
-        letter.AddComponent<MoveableObjects>();
-        Destroy(gameObject);
-    }
 }
