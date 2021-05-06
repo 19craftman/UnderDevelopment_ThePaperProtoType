@@ -13,7 +13,7 @@ public class Buttons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !GameState.endGame)
+        if(Input.GetKeyDown(KeyCode.Escape) && !GameState.endGame && GameState.titleScreenComplete)
         {
             pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
             if(pauseMenu.activeInHierarchy)
