@@ -10,7 +10,7 @@ public class ConstructionSign : MonoBehaviour
     private SpriteRenderer sr;
 
     [SerializeField] private Sprite[] sprites;
-    [SerializeField] private GameObject obstacles;
+    [SerializeField] private GameObject[] obstacles;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +45,10 @@ public class ConstructionSign : MonoBehaviour
         if (numClicks == 4)
         {
             GameState.doorsSetUp = true;
-            obstacles.SetActive(true);
+            foreach(GameObject a in obstacles)
+            {
+                a.SetActive(true);
+            }
 
             am.playDialog("DoorRoom5");
             Destroy(gameObject);

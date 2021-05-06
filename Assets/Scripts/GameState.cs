@@ -9,8 +9,8 @@ public class GameState
     public static bool doorsSetUp = false;
 
     public static bool cluckingtonFed = false;
-    public static bool puzzleOneSolved = false;
-    public static bool puzzleTwoSolved = false;
+    public static bool puzzleOneSolved = true;
+    public static bool puzzleTwoSolved = true;
     public static bool dayTime = false;
     public static bool sunPlaced = false;
     public static int chickenFed = 0;
@@ -18,4 +18,5 @@ public class GameState
     public static bool eggSold = false;
     public static bool dogEating = false;
     public static int itemsTaken = 0;
+    public static bool endGame = false;
 }

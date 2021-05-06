@@ -10,6 +10,13 @@ public class Door : MonoBehaviour
     private SpriteRenderer sr;
     private int numClicks;
     bool canClick = true;
+
+    [SerializeField] private GameObject[] turnOffGame;
+    [SerializeField] private GameObject dev;
+    [SerializeField] private GameObject fire;
+    [SerializeField] private GameObject paper;
+    [SerializeField] private GameObject title;
+    [SerializeField] private GameObject credits;
     // Start is called before the first frame update
     private void Start()
     {
@@ -33,14 +40,52 @@ public class Door : MonoBehaviour
         canClick = false;
         Sound s = am.soundLookUp(i);
         am.playDialog(i);
-        while(s.played == false)
-        {
-            yield return null;
-        }
+        yield return new WaitForSeconds(s.clip.length);
+
         if(numClicks>=3)
         {
-            //end game here
+            GameState.endGame = true;
+            yield return StartCoroutine(endGame());
+            Debug.Log("gg");
+            Application.Quit();
         }
         canClick = true;
+    }
+
+    IEnumerator endGame()
+    {
+        sr.enabled = false;
+        am.playEffect("page");
+        foreach(GameObject a in turnOffGame)
+        {
+            a.SetActive(false);
+        }
+        dev.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+
+        Sound s = am.soundLookUp("lighter");
+        am.playEffect(s.name);
+        yield return new WaitForSeconds(s.clip.length);
+
+        fire.SetActive(true);
+        s = am.soundLookUp("fire");
+        am.playEffect(s.name);
+        yield return new WaitForSeconds(s.clip.length);
+
+        paper.SetActive(false);
+        Destroy(dev);
+        title.SetActive(true);
+        yield return new WaitForSeconds(.05f);
+        Destroy(fire);
+        
+        yield return new WaitForSeconds(3f);
+
+        title.SetActive(false);
+        credits.SetActive(true);
+        yield return new WaitForSeconds(.5f);
+
+        s = am.soundLookUp("getOut");
+        am.playDialog(s.name);
+        yield return new WaitForSeconds(s.clip.length-2f);
     }
 }

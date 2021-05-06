@@ -41,6 +41,11 @@ public class AudioManager : MonoBehaviour
         Sound a = Array.Find(dialog, sound => sound.name == s);
         if(a==null)
         {
+            a = Array.Find(soundEffects, sound => sound.name == s);
+            
+        } 
+        if(a == null)
+        {
             Debug.Log("no sound found");
         }
         return a;
