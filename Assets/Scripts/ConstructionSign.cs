@@ -54,7 +54,7 @@ public class ConstructionSign : MonoBehaviour
             Destroy(gameObject);
         } else
         {
-            //sr.sprite = sprites[numClicks - 1];
+            sr.sprite = sprites[numClicks - 1];
             Debug.Log("door room sign sprite change");
         }
         canClick = true;
