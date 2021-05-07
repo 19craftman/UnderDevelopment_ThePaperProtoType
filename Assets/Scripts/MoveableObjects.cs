@@ -32,7 +32,7 @@ public class MoveableObjects : MonoBehaviour
             mpos = cam.ScreenToWorldPoint(mpos);
             mpos.z = 0;
 
-            if (bc.OverlapPoint(mpos))
+            if (bc.OverlapPoint(mpos) && GameState.paused==false && GameState.endGame==false)
             {
                 StartCoroutine(drag());
             }
@@ -44,11 +44,17 @@ public class MoveableObjects : MonoBehaviour
         
         while (Input.GetMouseButton(0))
         {
-            mpos = Input.mousePosition;
-            mpos = cam.ScreenToWorldPoint(mpos);
-            mpos.z = 0;
-            transform.position = mpos;
-            yield return null;
+            if (GameState.paused == false)
+            {
+                mpos = Input.mousePosition;
+                mpos = cam.ScreenToWorldPoint(mpos);
+                mpos.z = 0;
+                transform.position = mpos;
+                yield return null;
+            } else
+            {
+                break;
+            }
         }
     }
 }

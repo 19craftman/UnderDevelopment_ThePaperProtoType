@@ -31,7 +31,7 @@ public class Door : MonoBehaviour
         {
             sr.sprite = sprites[numClicks];
             StartCoroutine(playSound(dialog[numClicks]));
-            numClicks++;
+            
         }
     }
 
@@ -49,6 +49,7 @@ public class Door : MonoBehaviour
             Debug.Log("gg");
             Application.Quit();
         }
+        numClicks++;
         canClick = true;
     }
 
@@ -70,7 +71,7 @@ public class Door : MonoBehaviour
         fire.SetActive(true);
         s = am.soundLookUp("fire");
         am.playEffect(s.name);
-        yield return new WaitForSeconds(s.clip.length);
+        yield return new WaitForSeconds(s.clip.length-1f);
 
         paper.SetActive(false);
         Destroy(dev);
@@ -80,12 +81,8 @@ public class Door : MonoBehaviour
         
         yield return new WaitForSeconds(3f);
 
-        title.SetActive(false);
-        credits.SetActive(true);
-        yield return new WaitForSeconds(.5f);
-
         s = am.soundLookUp("getOut");
         am.playDialog(s.name);
-        yield return new WaitForSeconds(s.clip.length-2f);
+        yield return new WaitForSeconds(s.clip.length);
     }
 }

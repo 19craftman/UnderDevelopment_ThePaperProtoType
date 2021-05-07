@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class ClickChicken : MonoBehaviour
 {
-    [SerializeField] private Sprite sit, stand;
     private GameObject child;
-    private SpriteRenderer sr;
+    private Animator anim;
     private void Awake()
     {
         child = transform.GetChild(0).gameObject;
-        sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     private void OnMouseDown()
     {
-        StartCoroutine(standing());
+        stand();
+        anim.SetTrigger("stand");
     }
 
-    IEnumerator standing()
+    private void stand()
     {
         child.SetActive(true);
-        sr.sprite = stand;
-        yield return new WaitForSeconds(.2f);
+    }
+    public void sit()
+    {
         child.SetActive(false);
-        sr.sprite = sit;
     }
 }

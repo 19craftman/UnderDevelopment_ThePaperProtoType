@@ -7,7 +7,7 @@ public class InsideInventory : MonoBehaviour
     [SerializeField] private GameObject sun, bHammer;
     private List<GameObject> containing;
     [SerializeField] private Transform[] inventorySlots;
-    [SerializeField] private GameObject inventory;
+    [SerializeField] private GameObject inventory, game;
     private AudioManager am;
     // Start is called before the first frame update
     private void Awake()
@@ -49,7 +49,7 @@ public class InsideInventory : MonoBehaviour
     public void removeObject(GameObject item)
     {
         containing.Remove(item);
-        item.transform.parent = null;
+        item.transform.parent = game.transform;
     }
 
     private void positionItems()

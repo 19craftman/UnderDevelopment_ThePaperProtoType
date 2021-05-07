@@ -53,46 +53,52 @@ public class AudioManager : MonoBehaviour
 
     public void playEffect(string name)
     {
-        Sound e = Array.Find(soundEffects, sound => sound.name == name);
-        if(e == null)
+        if (GameState.paused == false || GameState.endGame == true)
         {
-            Debug.Log("sound " + name + " not found in soundEffects");
-            return;
-        }
-        e.source.outputAudioMixerGroup = effectsGroup;
-        if(!dPlaying)
-        {
-
-            Sound[] currPlaying = EffectsCurrPlaying();
-            
-            if(currPlaying.Length!=0)
+            Sound e = Array.Find(soundEffects, sound => sound.name == name);
+            if (e == null)
             {
-                StartCoroutine(FadeAndPlay("Fade", .025f, 0f, currPlaying, e));
+                Debug.Log("sound " + name + " not found in soundEffects");
+                return;
             }
-            else
+            e.source.outputAudioMixerGroup = effectsGroup;
+            if (!dPlaying)
             {
-                e.source.Play();
-            }
 
+                Sound[] currPlaying = EffectsCurrPlaying();
+
+                if (currPlaying.Length != 0)
+                {
+                    StartCoroutine(FadeAndPlay("Fade", .025f, 0f, currPlaying, e));
+                }
+                else
+                {
+                    e.source.Play();
+                }
+            }
         }
+        
     }
 
     Coroutine c;
     public void playDialog(string name)
     {
-        Sound s = Array.Find(dialog, sound => sound.name == name);
-        if (s == null)
+        if (GameState.paused == false || GameState.endGame == true)
         {
-            return;
-        }
-        bool interrupt = dPlaying && c != null;
-        if (interrupt)
-        {
-            StopCoroutine(c);
+            Sound s = Array.Find(dialog, sound => sound.name == name);
+            if (s == null)
+            {
+                return;
+            }
+            bool interrupt = dPlaying && c != null;
+            if (interrupt)
+            {
+                StopCoroutine(c);
 
-        } 
-        
-        c = StartCoroutine(PlayDialog(s, interrupt));
+            }
+
+            c = StartCoroutine(PlayDialog(s, interrupt));
+        }
         
     }
 

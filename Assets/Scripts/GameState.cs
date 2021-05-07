@@ -19,4 +19,25 @@ public class GameState
     public static bool dogEating = false;
     public static int itemsTaken = 0;
     public static bool endGame = false;
+    public static bool paused = false;
+
+    public static void reset()
+    {
+        titleScreenComplete = false;
+        doorsSetUp = false;
+
+        cluckingtonFed = false;
+        puzzleOneSolved = false;
+        puzzleTwoSolved = false;
+        dayTime = false;
+        sunPlaced = false;
+        chickenFed = 0;
+        eggsCollected = 0;
+        eggSold = false;
+        dogEating = false;
+        itemsTaken = 0;
+        endGame = false;
+        paused = false;
+        Piano.correct = false;
+    }
 }

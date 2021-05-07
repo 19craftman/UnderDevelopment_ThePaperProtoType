@@ -91,7 +91,6 @@ public class DogMove : MonoBehaviour
             GameState.dogEating = true;
             yield return new WaitForSeconds(eatTime);
             GameState.dogEating = false;
-
             GetComponent<SpriteRenderer>().sprite = empty;
 
             //stop eat animation
@@ -100,6 +99,9 @@ public class DogMove : MonoBehaviour
                 spDog.flipX = true;
                 yield return StartCoroutine(moveDog(endPos, startPos));
                 spDog.flipX = false;
+            } else
+            {
+                spDog.sprite = sleepDog;
             }
         }
         

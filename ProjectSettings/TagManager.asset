@@ -12,6 +12,7 @@ TagManager:
   - Chicken
   - Bucket
   - Egg
+  - Game
   layers:
   - Default
   - TransparentFX

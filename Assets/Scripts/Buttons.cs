@@ -18,10 +18,12 @@ public class Buttons : MonoBehaviour
             pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
             if(pauseMenu.activeInHierarchy)
             {
+                GameState.paused = true;
                 Time.timeScale = 0;
                 
             }else
             {
+                GameState.paused = false;
                 Time.timeScale = 1;
             }
         }
@@ -29,6 +31,8 @@ public class Buttons : MonoBehaviour
 
     public void reloadScene()
     {
+        GameState.reset();
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
     public void QuitGame()
@@ -38,13 +42,14 @@ public class Buttons : MonoBehaviour
 
     public void Back()
     {
+        GameState.paused = false;
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
     }
 
     public void setAudio()
     {
-        am.SetFloat("Dialog", slide.value);
+        am.SetFloat("Master", slide.value);
     }
 
 }

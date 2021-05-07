@@ -70,7 +70,15 @@ public class FeedBucket : MonoBehaviour
                 am.playDialog("Feed1");
             }
             Transform a = chicken.transform.GetChild(0);
-            a.localScale = Vector3.one;
+            a.parent = GameObject.FindGameObjectWithTag("Game").transform;
+            if (a.name.Equals("Gear"))
+            {
+                a.localScale = Vector3.one * 1.25f;
+            } else
+            {
+                a.localScale = Vector3.one;
+            }
+            
             a.gameObject.SetActive(true);
 
             a.gameObject.GetComponent<BoxCollider2D>().enabled = true;
